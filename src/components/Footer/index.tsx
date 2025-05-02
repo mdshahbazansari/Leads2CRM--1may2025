@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedinIn, faTwitter, faYoutube,faInstagram} from '@fortawesome/free-brands-svg-icons';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 
+
 export default function Footer() {
   return (
     <footer className="bg-maib text-white py-10">
@@ -23,7 +24,7 @@ export default function Footer() {
     <li><Link href="#" className="font-light ">Careers</Link></li>
     <li><Link href="#" className="font-light">Latest News</Link></li>
     <li><Link href="#" className="font-light">Corporate Vision</Link></li>
-    <li><Link href="#" className="font-light">About Leads2CRM</Link></li>
+    <li><Link href="/contact-us" className="font-light">About Leads2CRM</Link></li>
   </ul>
 </div>
 
