@@ -30,7 +30,7 @@ const ContactForm = () => {
               </p>
 
               <p className="text-sm text-gray-700">
-              Duabi,UAE
+              Dubai,UAE
               </p>
 
               <p className="text-sm text-gray-700">
