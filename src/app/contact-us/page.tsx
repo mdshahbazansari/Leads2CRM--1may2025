@@ -95,10 +95,58 @@ const ContactForm = () => {
             <label className="flex items-center gap-2 text-sm text-gray-700">
               <input type="checkbox" className="accent-[#5000d2]" /> Zoho CRM
             </label>
+
+
             <label className="flex items-center gap-2 text-sm text-gray-700">
               <input type="checkbox" className="accent-[#5000d2]" /> Zoho
               Payroll KSA
             </label>
+
+            <label className="flex items-center gap-2 text-sm text-gray-700">
+              <input type="checkbox" className="accent-[#5000d2]" /> Web Development
+            </label>
+
+            <label className="flex items-center gap-2 text-sm text-gray-700">
+              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              Mobile App Development (iOS & Android)
+            </label>
+
+
+            <label className="flex items-center gap-2 text-sm text-gray-700">
+              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              System Integration (APIs, CRM, third-party tools)
+            </label>
+
+
+            <label className="flex items-center gap-2 text-sm text-gray-700">
+              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              Custom Software Solutions
+            </label>
+
+            
+            <label className="flex items-center gap-2 text-sm text-gray-700">
+              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              E-Commerce Store Setup
+            </label>
+
+
+            <label className="flex items-center gap-2 text-sm text-gray-700">
+              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              Cloud Hosting & Deployment
+            </label>
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
         </div>
 
