@@ -107,32 +107,54 @@ const ContactForm = () => {
             </label>
 
             <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              <input type="checkbox" className="accent-[#5000d2]" /> 
               Mobile App Development (iOS & Android)
             </label>
 
 
             <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              <input type="checkbox" className="accent-[#5000d2]" /> 
               System Integration (APIs, CRM, third-party tools)
             </label>
 
 
             <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              <input type="checkbox" className="accent-[#5000d2]" /> 
               Custom Software Solutions
             </label>
 
             
             <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              <input type="checkbox" className="accent-[#5000d2]" /> 
               E-Commerce Store Setup
+            </label>
+
+
+            <label className="flex items-center gap-2 text-sm text-gray-700">
+              <input type="checkbox" className="accent-[#5000d2]" /> 
+              Zoho CRM & Zoho Creator Services
+            </label>
+
+
+            <label className="flex items-center gap-2 text-sm text-gray-700">
+              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              ERP Setup for Growing Businesses (Zoho & Odoo)
+
+            </label>
+
+
+            
+            <label className="flex items-center gap-2 text-sm text-gray-700">
+              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
+              UI/UX Design
+
             </label>
 
 
             <label className="flex items-center gap-2 text-sm text-gray-700">
               <input type="checkbox" className="accent-[#5000d2]" /> Zoho
               Cloud Hosting & Deployment
+
             </label>
 
 

@@ -43,24 +43,85 @@ export default function ContactModal({ showModal, closeModal }) {
                   <div className="bg-white rounded-3xl p-4 space-y-2 text-gray-900">
                     <label className="block font-semibold text-gray-700">Select Service(s)</label>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-                      <label className="flex items-center">
+                      <label className="flex items-start">
                         <input type="checkbox" className="mr-1" /> SEO
                       </label>
-                      <label className="flex items-center">
+                      <label className="flex items-start">
                         <input type="checkbox" className="mr-1" /> Google Ads
                       </label>
-                      <label className="flex items-center">
+                      <label className="flex items-start">
                         <input type="checkbox" className="mr-1 accent-white bg-white" /> Social Media
                       </label>
-                      <label className="flex items-center">
+                      <label className="flex items-start">
                         <input type="checkbox" className="mr-1" /> Graphic Designing
                       </label>
-                      <label className="flex items-center">
+                      <label className="flex items-start">
                         <input type="checkbox" className="mr-2" /> Content Writing
                       </label>
-                      <label className="flex items-center">
+                      <label className="flex items-start">
                         <input type="checkbox" className="mr-2" /> Website
                       </label>
+
+
+                      <label className="flex items-start">
+                        <input type="checkbox" className="mr-2" /> Web Development
+                      </label>
+
+                      <label className="flex items-start">
+                        <input type="checkbox" className="mr-2" /> Mobile App Development (iOS & Android)
+                      </label>
+
+                      <label className="flex items-start">
+                        <input type="checkbox" className="mr-2" /> System Integration & API Development
+                      </label>
+
+
+                      <label className="flex items-start">
+                        <input type="checkbox" className="mr-2" />Custom Software Solutions
+                      </label>
+
+
+                      <label className="flex items-start">
+                        <input type="checkbox" className="mr-2" /> E-Commerce Store Setup
+                      </label>
+
+
+                      <label className="flex items-start">
+                        <input type="checkbox" className="mr-2" /> Zoho CRM & Zoho Creator Services
+                      </label>
+
+
+                      <label className="flex items-start">
+                        <input type="checkbox" className="mr-2" /> ERP Setup for Growing Businesses (Zoho & Odoo)
+                      </label>
+
+
+                      <label className="flex items-start">
+                        <input type="checkbox" className="mr-2" /> UI/UX Design
+                      </label>
+
+                      <label className="flex items-start">
+                        <input type="checkbox" className="mr-2" /> Cloud Hosting & Deployment
+                      </label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                   </div>
                   <textarea placeholder="Type your message" className="w-full rounded-3xl px-4 py-2 bg-white text-black" rows={2}></textarea>
