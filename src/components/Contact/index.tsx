@@ -113,7 +113,7 @@ const Contact = () => {
                     ALM Interactive Soft Sol Pvt Ltd <br />
                     4th Floor, Kautilya Complex, <br />
                     Raj Bhavan Quarters Colony, Somajiguda <br />
-                    Hyderabad – 500041. <br />
+                    Hyderabad - 500041. <br />
                     Phone + WhatsApp: +91 8008921118
                   </p>
                   <div>
@@ -145,7 +145,7 @@ const Contact = () => {
                   <p className="text-md text-gray-700 mb-8">
                     6541 Prince Abdul Aziz Bin Musaid Bin Jalawi-AI Murabba Dist. <br />
                     Unit No 63 <br />
-                    Riyadh – 12628-2309 <br />
+                    Riyadh - 12628-2309 <br />
                     Short Address RCRA6541 <br />
                     Kingdom of Saudi Arabia <br />
                     Mobile : 0537697424 <br />

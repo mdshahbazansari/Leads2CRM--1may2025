@@ -5,6 +5,8 @@ import { User, Mail, Phone, Building, MessageCircle } from "lucide-react";
 import { FaCheck } from "react-icons/fa";
 // import ContactModal from "@/components/ContactModal/ContactModal";
 import ContactModal from "@/src/app/contact/page";
+import ContactModal from "@/src/components/Contact/index";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
