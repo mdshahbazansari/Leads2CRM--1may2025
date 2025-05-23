@@ -1,14 +1,14 @@
-'use client';
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import { User, Mail, Phone, Building, MessageCircle } from "lucide-react";
 import { FaCheck } from "react-icons/fa";
 import ContactModal from "@/components/ContactModal/ContactModal";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -23,7 +23,7 @@ export default function Home() {
     },
     {
       quote:
-        "Their team delivered beyond expectations — fast, reliable, and innovative! They understood our unique challenges and delivered tailored solutions. Communication was clear and proactive throughout the project. Sedra professionalism and delivery speed truly impressed us. Highly recommended for digital growth initiatives.",
+        "Their team delivered beyond expectations - fast, reliable, and innovative! They understood our unique challenges and delivered tailored solutions. Communication was clear and proactive throughout the project. Sedra professionalism and delivery speed truly impressed us. Highly recommended for digital growth initiatives.",
       name: "Sara Khan",
       role: "CTO at DigiCore",
       logo: "/images/bms_testmonial_logo/sedra2.jpeg",
@@ -37,7 +37,7 @@ export default function Home() {
     },
     {
       quote:
-        "They supported us through every phase of our tech upgrade — highly recommend! From planning to execution, everything was smooth. Their solutions have brought agility and automation to our operations. We appreciated their transparency and guidance. Sedra delivered exactly what we needed — on time and beyond expectation.",
+        "They supported us through every phase of our tech upgrade - highly recommend! From planning to execution, everything was smooth. Their solutions have brought agility and automation to our operations. We appreciated their transparency and guidance. Sedra delivered exactly what we needed - on time and beyond expectation.",
       name: "James Holden",
       role: "Product Manager at LogicBridge",
       logo: "/images/bms_testmonial_logo/sedra2.jpeg",
@@ -52,17 +52,25 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white px-4 sm:px-6 lg:px-8 py-24 sm:py-24">
+    <div className="flex flex-col items-center justify-center bg-white px-4 py-24 sm:px-6 sm:py-24 lg:px-8">
       <div className="grid max-w-6xl items-center   md:grid-cols-2">
         <div className="xl:ml-10">
-          <h1 className="mb-4 text-3xl sm:text-4xl font-bold text-gray-900">
-          Digital Transformation
+          <h1 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">
+            Digital Transformation
           </h1>
           <p className="mb-4 text-gray-900">
-            A Building Management System (BMS), also known as a Building Automation System (BAS), is a centralized platform that monitors and controls a buildings essential systems like HVAC, lighting, security, and plumbing.
+            A Building Management System (BMS), also known as a Building
+            Automation System (BAS), is a centralized platform that monitors and
+            controls a buildings essential systems like HVAC, lighting,
+            security, and plumbing.
           </p>
           <ul className="mt-4 space-y-3">
-            {["Sensors that track temperature, humidity, and occupancy", "Controllers that make real-time adjustments", "Enhanced User Interface for monitoring and control", "Communication networks that connect with systems like fire alarms and elevators"].map((item, i) => (
+            {[
+              "Sensors that track temperature, humidity, and occupancy",
+              "Controllers that make real-time adjustments",
+              "Enhanced User Interface for monitoring and control",
+              "Communication networks that connect with systems like fire alarms and elevators",
+            ].map((item, i) => (
               <li key={i} className="flex items-center text-gray-900">
                 <span className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 text-green">
                   <FaCheck size={14} />
@@ -72,23 +80,36 @@ export default function Home() {
             ))}
           </ul>
           <div className="pt-10">
-            <button className="px-6 py-3 text-sm sm:text-base bg-blue hover:bg-sky-500 text-white rounded-sm transition duration-300">START TODAY FOR FREE</button>
+            <button className="rounded-sm bg-blue px-6 py-3 text-sm text-white transition duration-300 hover:bg-sky-500 sm:text-base">
+              START TODAY FOR FREE
+            </button>
           </div>
         </div>
 
-        <div className="relative xl:ml-36   mt-8 w-full rounded-xl bg-white p-6 shadow-xl md:ml-24 md:max-w-sm">
-          <h2 className="mb-2 text-xl font-semibold text-gray-900">Interested?</h2>
+        <div className="relative mt-8   w-full rounded-xl bg-white p-6 shadow-xl md:ml-24 md:max-w-sm xl:ml-36">
+          <h2 className="mb-2 text-xl font-semibold text-gray-900">
+            Interested?
+          </h2>
           <p className="mb-4 text-sm text-gray-500">
             Fill in this form to let us get back to you ASAP!
           </p>
           <form className="space-y-3">
-            {[{ icon: User, placeholder: "Full Name", type: "text" },
+            {[
+              { icon: User, placeholder: "Full Name", type: "text" },
               { icon: Mail, placeholder: "Business Email", type: "email" },
               { icon: Phone, placeholder: "Mobile Number", type: "tel" },
-              { icon: Building, placeholder: "Company Name", type: "text" }].map(({ icon: Icon, ...props }, i) => (
-              <div key={i} className="flex items-center rounded-lg border border-gray-300 bg-white px-3 shadow-sm">
+              { icon: Building, placeholder: "Company Name", type: "text" },
+            ].map(({ icon: Icon, ...props }, i) => (
+              <div
+                key={i}
+                className="flex items-center rounded-lg border border-gray-300 bg-white px-3 shadow-sm"
+              >
                 <Icon size={18} className="text-gray-400" />
-                <input {...props} className="w-full bg-transparent p-2 text-gray-900 outline-none" required />
+                <input
+                  {...props}
+                  className="w-full bg-transparent p-2 text-gray-900 outline-none"
+                  required
+                />
               </div>
             ))}
             <div className="flex items-start rounded-sm border border-gray-300 bg-white px-3 shadow-sm">
@@ -103,27 +124,45 @@ export default function Home() {
             <button
               type="button"
               onClick={() => setShowModal(true)}
-              className="bg-blue hover:bg-sky-500 w-full rounded-sm p-2 text-white shadow-md transition duration-300"
+              className="w-full rounded-sm bg-blue p-2 text-white shadow-md transition duration-300 hover:bg-sky-500"
             >
               Talk to Sales
             </button>
           </form>
-          <ContactModal showModal={showModal} closeModal={() => setShowModal(false)} />
+          <ContactModal
+            showModal={showModal}
+            closeModal={() => setShowModal(false)}
+          />
         </div>
       </div>
 
       <div className="mt-20 w-full max-w-6xl p-4 sm:p-10">
-        <p className="text-blue-600 text-sm text-center font-bold">Whats included?</p>
-        <h2 className="text-3xl text-center font-bold text-gray-900 mb-4">Our Services</h2>
-        <p className="text-gray-700 mb-6 text-center">
-          Find our services that help you align technology with your business goals and vision.
+        <p className="text-blue-600 text-center text-sm font-bold">
+          Whats included?
         </p>
-        <div className="grid md:grid-cols-2 gap-10">
+        <h2 className="mb-4 text-center text-3xl font-bold text-gray-900">
+          Our Services
+        </h2>
+        <p className="mb-6 text-center text-gray-700">
+          Find our services that help you align technology with your business
+          goals and vision.
+        </p>
+        <div className="grid gap-10 md:grid-cols-2">
           <div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Key Components of BMS</h3>
-            <p className="text-gray-600 mb-4">We assess your IT operating model and provide actionable insights to align tech with your objectives.</p>
+            <h3 className="mb-2 text-xl font-semibold text-gray-800">
+              Key Components of BMS
+            </h3>
+            <p className="mb-4 text-gray-600">
+              We assess your IT operating model and provide actionable insights
+              to align tech with your objectives.
+            </p>
             <ul className="mt-4 space-y-3">
-              {["Sensors - Measure temperature, humidity, motion, occupancy", "Controllers - Process sensor data and make system", "Dashboards for operators to monitor and manage systems", "Enables system-wide integration with elevators"].map((item, i) => (
+              {[
+                "Sensors - Measure temperature, humidity, motion, occupancy",
+                "Controllers - Process sensor data and make system",
+                "Dashboards for operators to monitor and manage systems",
+                "Enables system-wide integration with elevators",
+              ].map((item, i) => (
                 <li key={i} className="flex items-center text-gray-900">
                   <span className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 text-green">
                     <FaCheck size={14} />
@@ -133,34 +172,45 @@ export default function Home() {
               ))}
             </ul>
           </div>
-          <div className="flex justify-center items-center xl:ml-14">
+          <div className="flex items-center justify-center xl:ml-14">
             <Image
               src="/images/zoho/Zoho/Images/image200.png"
               alt="IT Strategy"
               width={400}
               height={300}
-              className="w-full h-auto max-w-md object-contain"
+              className="h-auto w-full max-w-md object-contain"
             />
           </div>
         </div>
       </div>
 
       <div className="mt-20 w-full max-w-6xl p-4 sm:p-10">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="flex justify-center items-center order-1 md:order-none xl:mr-8">
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div className="order-1 flex items-center justify-center md:order-none xl:mr-8">
             <Image
               src="/images/zoho/Zoho/Images/image192.png"
               alt="Digital Planning"
               width={400}
               height={300}
-              className="w-full h-auto max-w-md object-contain"
+              className="h-auto w-full max-w-md object-contain"
             />
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Benefits of Implementing BMS</h3>
-            <p className="text-gray-600 mb-4">Deploying a BMS brings measurable operational and economic advantages to any modern facility or commercial building.</p>
+            <h3 className="mb-2 text-xl font-semibold text-gray-800">
+              Benefits of Implementing BMS
+            </h3>
+            <p className="mb-4 text-gray-600">
+              Deploying a BMS brings measurable operational and economic
+              advantages to any modern facility or commercial building.
+            </p>
             <ul className="mt-4 space-y-3">
-              {["Energy Efficiency Optimization - Reduced energy costs through automation and smart scheduling", "Improved safety via alerts and preventive maintenance", "Real-time monitoring for faster decision-making", "Better comfort for occupants with optimized climate control", "Reduced downtime and improved asset life cycle"].map((item, i) => (
+              {[
+                "Energy Efficiency Optimization - Reduced energy costs through automation and smart scheduling",
+                "Improved safety via alerts and preventive maintenance",
+                "Real-time monitoring for faster decision-making",
+                "Better comfort for occupants with optimized climate control",
+                "Reduced downtime and improved asset life cycle",
+              ].map((item, i) => (
                 <li key={i} className="flex items-center text-gray-900">
                   <span className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 text-green">
                     <FaCheck size={14} />
@@ -185,25 +235,31 @@ export default function Home() {
           {testimonialData.map((testimonial, index) => (
             <SwiperSlide key={index}>
               <div
-                className="flex flex-col md:flex-row items-center justify-between rounded-xl overflow-hidden bg-black text-white "
+                className="flex flex-col items-center justify-between overflow-hidden rounded-xl bg-black text-white md:flex-row "
                 style={{
                   backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1581092334648-4b8b4d9fa0b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
               >
                 <div className="p-6 sm:p-10 md:w-2/3">
-                  <p className="text-sm sm:text-[1rem] font-light leading-relaxed">
-                    <span className="text-blue-400 text-3xl sm:text-4xl">&quot;</span>
+                  <p className="text-sm font-light leading-relaxed sm:text-[1rem]">
+                    <span className="text-blue-400 text-3xl sm:text-4xl">
+                      &quot;
+                    </span>
                     {testimonial.quote}
-                    <span className="text-blue-400 text-3xl sm:text-4xl">&quot;</span>
+                    <span className="text-blue-400 text-3xl sm:text-4xl">
+                      &quot;
+                    </span>
                   </p>
-                  <p className="mt-4 sm:mt-6 font-semibold">
+                  <p className="mt-4 font-semibold sm:mt-6">
                     {testimonial.name}
-                    <span className="font-normal text-sm">, {testimonial.role}</span>
+                    <span className="text-sm font-normal">
+                      , {testimonial.role}
+                    </span>
                   </p>
                 </div>
-                <div className="flex justify-center items-center md:w-1/3 p-6 sm:p-10">
+                <div className="flex items-center justify-center p-6 sm:p-10 md:w-1/3">
                   <Image
                     src={testimonial.logo}
                     alt={`${testimonial.name} Logo`}

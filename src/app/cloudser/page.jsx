@@ -23,7 +23,7 @@ export default function Home() {
     },
     {
       quote:
-        "Their team delivered beyond expectations — fast, reliable, and innovative! They understood our unique challenges and delivered tailored solutions. Communication was clear and proactive throughout the project. Sedra professionalism and delivery speed truly impressed us. Highly recommended for digital growth initiatives.",
+        "Their team delivered beyond expectations - fast, reliable, and innovative! They understood our unique challenges and delivered tailored solutions. Communication was clear and proactive throughout the project. Sedra professionalism and delivery speed truly impressed us. Highly recommended for digital growth initiatives.",
       name: "Sara Khan",
       role: "CTO at DigiCore",
       logo: "/images/bms_testmonial_logo/sedra2.jpeg",
@@ -37,7 +37,7 @@ export default function Home() {
     },
     {
       quote:
-        "They supported us through every phase of our tech upgrade — highly recommend! From planning to execution, everything was smooth. Their solutions have brought agility and automation to our operations. We appreciated their transparency and guidance. Sedra delivered exactly what we needed — on time and beyond expectation.",
+        "They supported us through every phase of our tech upgrade - highly recommend! From planning to execution, everything was smooth. Their solutions have brought agility and automation to our operations. We appreciated their transparency and guidance. Sedra delivered exactly what we needed - on time and beyond expectation.",
       name: "James Holden",
       role: "Product Manager at LogicBridge",
       logo: "/images/bms_testmonial_logo/sedra2.jpeg",

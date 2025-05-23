@@ -23,7 +23,7 @@ export default function Home() {
     },
     {
       quote:
-        "Their team delivered beyond expectations — fast, reliable, and innovative! They understood our unique challenges and delivered tailored solutions. Communication was clear and proactive throughout the project. Sedra professionalism and delivery speed truly impressed us. Highly recommended for digital growth initiatives.",
+        "Their team delivered beyond expectations - fast, reliable, and innovative! They understood our unique challenges and delivered tailored solutions. Communication was clear and proactive throughout the project. Sedra professionalism and delivery speed truly impressed us. Highly recommended for digital growth initiatives.",
       name: "Sara Khan",
       role: "CTO at DigiCore",
       logo: "/images/bms_testmonial_logo/sedra2.jpeg",
@@ -37,7 +37,7 @@ export default function Home() {
     },
     {
       quote:
-        "They supported us through every phase of our tech upgrade — highly recommend! From planning to execution, everything was smooth. Their solutions have brought agility and automation to our operations. We appreciated their transparency and guidance. Sedra delivered exactly what we needed — on time and beyond expectation.",
+        "They supported us through every phase of our tech upgrade - highly recommend! From planning to execution, everything was smooth. Their solutions have brought agility and automation to our operations. We appreciated their transparency and guidance. Sedra delivered exactly what we needed - on time and beyond expectation.",
       name: "James Holden",
       role: "Product Manager at LogicBridge",
       logo: "/images/bms_testmonial_logo/sedra2.jpeg",
@@ -119,7 +119,7 @@ export default function Home() {
         <p className="text-blue-600 text-sm text-center font-bold">Whats included?</p>
         <h2 className="text-3xl text-center font-bold text-gray-900 mb-4">Our Services</h2>
         <p className="text-gray-700 mb-6 text-center">
-        We provide end-to-end solutions for designing, installing, and maintaining Data and IP Systems — ensuring your networks are reliable, secure, and scalable to meet your business or residential needs.
+        We provide end-to-end solutions for designing, installing, and maintaining Data and IP Systems - ensuring your networks are reliable, secure, and scalable to meet your business or residential needs.
 
 
         </p>

@@ -23,7 +23,7 @@ export default function Home() {
     },
     {
       quote:
-        "Their team delivered beyond expectations — fast, reliable, and innovative! They understood our unique challenges and delivered tailored solutions. Communication was clear and proactive throughout the project. Sedra professionalism and delivery speed truly impressed us. Highly recommended for digital growth initiatives.",
+        "Their team delivered beyond expectations - fast, reliable, and innovative! They understood our unique challenges and delivered tailored solutions. Communication was clear and proactive throughout the project. Sedra professionalism and delivery speed truly impressed us. Highly recommended for digital growth initiatives.",
       name: "Sara Khan",
       role: "CTO at DigiCore",
       logo: "/images/bms_testmonial_logo/sedra2.jpeg",
@@ -37,7 +37,7 @@ export default function Home() {
     },
     {
       quote:
-        "They supported us through every phase of our tech upgrade — highly recommend! From planning to execution, everything was smooth. Their solutions have brought agility and automation to our operations. We appreciated their transparency and guidance. Sedra delivered exactly what we needed — on time and beyond expectation.",
+        "They supported us through every phase of our tech upgrade - highly recommend! From planning to execution, everything was smooth. Their solutions have brought agility and automation to our operations. We appreciated their transparency and guidance. Sedra delivered exactly what we needed — on time and beyond expectation.",
       name: "James Holden",
       role: "Product Manager at LogicBridge",
       logo: "/images/bms_testmonial_logo/sedra2.jpeg",
@@ -126,10 +126,10 @@ export default function Home() {
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Key Components of Access Control Systems</h3>
             <p className="text-gray-600 mb-4">Our solutions are built to fit your unique security needs and organizational structure.</p>
             <ul className="mt-4 space-y-3">
-              {["Authentication Devices – Card readers, fingerprint scanners, facial recognition, and keypads",
-               "Access Control Panels – Process credentials and manage entry permissions",
-                "Management Software – Centralized control and real-time reporting",
-                 "Integration Capabilities – Seamlessly connect with CCTV, fire alarm, and building automation systems"].map((item, i) => (
+              {["Authentication Devices - Card readers, fingerprint scanners, facial recognition, and keypads",
+               "Access Control Panels - Process credentials and manage entry permissions",
+                "Management Software - Centralized control and real-time reporting",
+                 "Integration Capabilities - Seamlessly connect with CCTV, fire alarm, and building automation systems"].map((item, i) => (
                 <li key={i} className="flex items-center text-gray-900">
                   <span className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 text-green">
                     <FaCheck size={14} />
@@ -167,11 +167,11 @@ export default function Home() {
             Benefits of Implementing Access Control Systems</h3>
             <p className="text-gray-600 mb-4">Access control provides essential advantages for securing modern facilities:</p>
             <ul className="mt-4 space-y-3">
-              {["Enhanced Security – Prevent unauthorized access to sensitive areas",
-               "Data Protection – Safeguard confidential information and assets",
-                "Activity Tracking – Monitor and review access events for compliance and investigations",
-                 "Customizable User Access – Tailor entry permissions by user, time, or location",
-                  "System Integration – Create a unified and streamlined building security infrastructure"].map((item, i) => (
+              {["Enhanced Security - Prevent unauthorized access to sensitive areas",
+               "Data Protection - Safeguard confidential information and assets",
+                "Activity Tracking - Monitor and review access events for compliance and investigations",
+                 "Customizable User Access - Tailor entry permissions by user, time, or location",
+                  "System Integration - Create a unified and streamlined building security infrastructure"].map((item, i) => (
                 <li key={i} className="flex items-center text-gray-900">
                   <span className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 text-green">
                     <FaCheck size={14} />
