@@ -26,6 +26,11 @@ const Header = () => {
               url: "/zoho",
               contentKey: "api",
             },
+            {
+              text: "Zoho-CRM",
+              url: "/zoho-crm",
+              contentKey: "api",
+            },
             // {
             //   text: "Zoho CRM",
             //   url: "/zoho-crm",
@@ -77,16 +82,16 @@ const Header = () => {
             //   url: "/zoho-commerce",
             //   contentKey: "eCommerce",
             // },
-            {
-              text: "Odoo",
-              url: "https://example.com/operations-management",
-              contentKey: "cloud",
-            },
-            {
-              text: "Salesforce",
-              url: "https://example.com/financial-management",
-              contentKey: "financialManagement",
-            },
+            // {
+            //   text: "Odoo",
+            //   url: "https://example.com/operations-management",
+            //   contentKey: "cloud",
+            // },
+            // {
+            //   text: "Salesforce",
+            //   url: "https://example.com/financial-management",
+            //   contentKey: "financialManagement",
+            // },
             // {
             //   text: "SAP",
             //   url: "https://example.com/financial-management",

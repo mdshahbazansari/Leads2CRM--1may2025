@@ -112,7 +112,7 @@ const ServiceDetails = () => {
       <div className="text-center py-20">
         <h1 className="text-4xl font-bold">Service Not Found</h1>
         <p className="text-lg mt-4">
-          The service you are looking for does not exist. Please check the URL or go back to the{' '}
+          The service you are looking for does not exist. Please check the URL or go back to the
           <a href="/service" className="text-primary underline">services page</a>.
         </p>
       </div>
