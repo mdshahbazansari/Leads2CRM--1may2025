@@ -110,7 +110,7 @@ export default function Home() {
               Talk to Sales
             </button>
           </form>
-          <Contact showModal={showModal} closeModal={() => setShowModal(false)} />
+          {/* <Contact showModal={showModal} closeModal={() => setShowModal(false)} /> */}
         </div>
       </div>
 
