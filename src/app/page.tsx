@@ -5,7 +5,7 @@ import Brands from "@/components/Brands";
 import BusinessSection from "@/components/business";
 import BrandsClient from "@/components/client";
 import ScrollUp from "@/components/Common/ScrollUp";
-import Contact from "@/components/Contact";
+import Contact from "@/components/Contact-us";
 import Cookies from "@/components/cookie";
 import FAQs from "@/components/Faqs";
 import Features from "@/components/Features";
