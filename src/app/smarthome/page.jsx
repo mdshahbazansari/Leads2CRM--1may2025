@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { User, Mail, Phone, Building, MessageCircle } from "lucide-react";
 import { FaCheck } from "react-icons/fa";
-import ContactModal from "@/components/ContactModal/ContactModal";
+// import ContactModal from "@/components/ContactModal/ContactModal";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -108,7 +108,7 @@ export default function Home() {
               Talk to Sales
             </button>
           </form>
-          <ContactModal showModal={showModal} closeModal={() => setShowModal(false)} />
+          {/* <ContactModal showModal={showModal} closeModal={() => setShowModal(false)} /> */}
         </div>
       </div>
 
