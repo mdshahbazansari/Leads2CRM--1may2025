@@ -74,6 +74,7 @@ export default function ZohoBanner() {
                         src={videos[activeTab].src}
                         autoPlay
                         loop
+                        muted
                         controls
                         className="w-10/12 h-full object-cover rounded-2xl"
                         poster="/video/placeholder.jpg" // Optional: poster image

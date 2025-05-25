@@ -60,7 +60,7 @@ export default function ZohoCRMIndustry() {
                 {industries.map((item, i) => (
                     <div
                         key={i}
-                        className={`rounded-2xl overflow-hidden shadow-sm flex flex-col md:flex-row ${item.bg}`}
+                        className={`rounded-2xl mx-2 overflow-hidden shadow-sm flex flex-col md:flex-row ${item.bg}`}
                     >
                         {/* Left: Image */}
                         <div className="md:w-1/2 w-full h-56 md:h-auto">

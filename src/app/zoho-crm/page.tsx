@@ -3,6 +3,7 @@ import TakeUsForASpin from "./TakeUsForASpin"
 import FAQSlider from "./FAQSlider"
 import ZohoBanner from "./ZohoBanner"
 import ZohoCRMIndustry from "./ZohoCRMIndustry"
+import ZohoCreatorCustomApp from "./ZohoCreatorCustomApp"
 
 const page = () => {
     return (
@@ -10,6 +11,7 @@ const page = () => {
             <ZohoCrm />
             <ZohoBanner />
             <ZohoCRMIndustry />
+            <ZohoCreatorCustomApp />
             {/* <TakeUsForASpin /> */}
             <FAQSlider />
         </div>

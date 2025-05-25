@@ -24,7 +24,7 @@ export default function TakeUsForASpin() {
                     </div>
                 </div>
             </section>
-            <div className="relative mt-6 md:mt-10 rounded-2xl min-h-screen w-full flex flex-col items-center justify-start bg-gradient-to-b from-[#fff7c2] via-[#fffccc] to-[#ffedcd77] py-12">
+            <div className="relative mt-6 md:mt-10 rounded-2xl w-full flex flex-col items-center justify-start bg-gradient-to-b from-[#fff7c2] via-[#fffccc] to-[#ffedcd77] py-6">
                 <div className="mx-auto flex-col items-center justify-center">
                     <div className=" my-6 md:my-10">
                         <h1 className="text-3xl md:text-6xl text-center text-black font-semibold">Perfect for your <br />

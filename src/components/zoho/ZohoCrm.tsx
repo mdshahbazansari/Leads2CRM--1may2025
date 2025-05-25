@@ -33,7 +33,7 @@ const ZohoCrm = () => {
                                 <img
                                     src="/images/zoho/gartner.jpg"
                                     alt="Gartner"
-                                    className="w-12 h-12 object-contain"
+                                    className="w-16 h-16 rounded-full object-contain"
                                 />
                             </div>
                             <div className="text-base text-black font-medium text-center md:text-left">
@@ -108,12 +108,12 @@ const ZohoCrm = () => {
                         </div>
 
                         {/* Nucleus Research */}
-                        <div className="flex-1 flex-col md:flex items-center justify-center">
+                        <div className="flex-1 flex flex-col items-center justify-center">
                             <div className="bg-white rounded-full shadow w-20 h-20 flex items-center justify-center mb-4">
                                 <img
                                     src="/images/zoho/nucleus.jpg"
                                     alt="Nucleus Research"
-                                    className="w-12 h-12 object-contain"
+                                    className="w-16 h-16 rounded-full object-contain"
                                 />
                             </div>
                             <div className="text-base text-black font-medium text-center md:text-left">
