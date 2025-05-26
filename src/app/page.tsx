@@ -6,6 +6,7 @@ import BusinessSection from "@/components/business";
 import BrandsClient from "@/components/client";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact-us";
+import ContactUs from "@/components/Contact-us/ContactUs";
 import Cookies from "@/components/cookie";
 import FAQs from "@/components/Faqs";
 import Features from "@/components/Features";
@@ -32,10 +33,12 @@ import { Metadata } from "next";
 import { FaQq } from "react-icons/fa";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.leads2crm.com"),
   title: "Maiprosoft - Expertise You Can Trust",
   description: "We are committed to transform clients businesses and driving success in the digital age",
   // other metadata
   openGraph: {
+    
     title: "Maiprosoft - Expertise You Can Trust",
     description:
       "We are committed to transforming clients businesses and driving success in the digital age",
@@ -88,6 +91,7 @@ export default function Home() {
       {/* <AboutSectionOne />
       <AboutSectionTwo /> */}
       <Testimonials />
+      <ContactUs id="contact-us" />
       {/* <Pricing />  */}
       {/* <FAQs/> */}
       {/* <Blog /> */}

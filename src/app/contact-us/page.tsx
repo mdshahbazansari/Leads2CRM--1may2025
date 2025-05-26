@@ -1,246 +1,174 @@
-"use client";
+'use client'
+import { Mail, MapPin, Phone } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { db } from "@/lib/firebase"; // Adjust path as needed
+import { collection, addDoc } from "firebase/firestore";
 
-import React from "react";
-import { SlLocationPin } from "react-icons/sl";
-import { IoIosCall } from "react-icons/io";
-import { MdEmail } from "react-icons/md";
+const ContactUs = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
 
-const ContactForm = () => {
+  // Get service from URL if present
+  const searchParams = useSearchParams();
+  const service = searchParams.get('service') || '';
+
+  // Form state
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+    service: service,
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  // Handle input changes
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      await addDoc(collection(db, "contactRequests"), form);
+      setSubmitted(true);
+    } catch (err) {
+      alert("Something went wrong. Please try again.");
+    }
+    setLoading(false);
+  };
+
   return (
-    <>
-    <section className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-12 px-6 pt-32 pb-10 lg:flex-row ">
-      {/* Left Section */}
-      <div className="w-full space-y-6 lg:w-5/12">
-        <h4 className="text-sm font-semibold uppercase tracking-widest text-cyan-500">
-          Get in Touch
-        </h4>
-        <h2 className="text-3xl font-semibold leading-snug text-[#0A0033] lg:text-4xl">
-          Find Us Here. Make Real <br /> Results Happen.
-        </h2>
-
-        <div className="space-y-6">
-          <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center rounded-full bg-[#0400d2] p-3 text-white">
-            <SlLocationPin />
-            </div>
-            <div>
-              <p className="font-semibold text-[#0A0033]">Locations</p>
-              <p className="text-sm text-gray-700">
-                New Delhi,India
-              </p>
-
-              <p className="text-sm text-gray-700">
-              Dubai,UAE
-              </p>
-
-              <p className="text-sm text-gray-700">
-              Jeddah, Saudai Arabia
-              </p>
-
-
-
-            </div>
-          </div>
-
-          {/* <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center rounded-full bg-[#0400d2] p-3 text-white">
-            <IoIosCall />
-            </div>
-            <div>
-              <p className="font-semibold text-[#0A0033]">Any Questions?</p>
-              <p className="text-sm text-gray-700">+96 1234567892</p>
-            </div>
-          </div> */}
-
-          <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center rounded-full bg-[#0400d2] p-3 text-white">
-            <MdEmail />
-            </div>
-            <div>
-              <p className="font-semibold text-[#0A0033]">Write Email</p>
-              <p className="text-sm text-gray-700">info@leads2crm.com</p>
-            </div>
-          </div>
-        </div>
+    <div className="min-h-screen px-8 py-24 bg-white text-gray-700 font-sans"
+      style={{
+        backgroundImage:
+          "url('https://sedra.net.sa/wp-content/uploads/2024/03/path-1.png')",
+      }}
+    >
+      <div className="py-10">
+        <h1 className="text-blue-700 mb-6 text-center text-4xl font-bold">
+          CONTACT US
+        </h1>
+        <p className="mx-auto mb-4 max-w-4xl text-center text-lg">
+          Feel free to reach out to us with any inquiries or to discuss your project needs, our dedicated team is ready to assist you and provide the support you require.
+        </p>
       </div>
-
-      {/* Right Section - Form */}
-      <form className="w-full space-y-5 rounded-lg bg-white px-4 lg:px-8 py-10 shadow-xl lg:w-6/12">
-        <input
-          type="text"
-          placeholder="Name"
-          className="w-full rounded-md border border-gray-300 bg-slate-200 px-4 py-3 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#5000d2]"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="w-full rounded-md border border-gray-300 bg-slate-200 px-4 py-3 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#5000d2]"
-        />
-        <input
-          type="tel"
-          placeholder="Mobile Number"
-          className="w-full rounded-md border border-gray-300 bg-slate-200 px-4 py-3 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#5000d2]"
-        />
-        <input
-          type="text"
-          placeholder="Company Name"
-          className="w-full rounded-md border border-gray-300 bg-slate-200 px-4 py-3 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#5000d2]"
-        />
-
-        <div>
-          <label className="mb-1 block text-sm font-medium text-gray-700">
-            Apps Needed
-          </label>
-          <div className="max-h-32 space-y-2 overflow-y-auto rounded-md border border-gray-300 p-3">
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> Zoho CRM
-            </label>
-
-
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
-              Payroll KSA
-            </label>
-
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> Web Development
-            </label>
-
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> 
-              Mobile App Development (iOS & Android)
-            </label>
-
-
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> 
-              System Integration (APIs, CRM, third-party tools)
-            </label>
-
-
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> 
-              Custom Software Solutions
-            </label>
-
-            
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> 
-              E-Commerce Store Setup
-            </label>
-
-
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> 
-              Zoho CRM & Zoho Creator Services
-            </label>
-
-
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
-              ERP Setup for Growing Businesses (Zoho & Odoo)
-
-            </label>
-
-
-            
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
-              UI/UX Design
-
-            </label>
-
-
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <input type="checkbox" className="accent-[#5000d2]" /> Zoho
-              Cloud Hosting & Deployment
-
-            </label>
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+        {/* Left: Contact Info */}
+        <div className="gap gap-y-10" data-aos="fade-right">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-700 mb-6 tracking-widest">
+            INFORMATION
+          </h2>
+          <div className="flex items-start gap-6 mb-4">
+            <MapPin className="text-cyan-600 w-6 h-6" />
+            <p className="mb-4 leading-relaxed text-gray-700">
+              Kingdom of Saudi Arabia<br />
+              AL Madinah Al Monwarah street, <br /> Al Bawadi Dis, Al Madina Plaza Building,
+              Floor 5, Office 505
+            </p></div>
+          <div className="flex items-start gap-6 mb-4">
+            <Phone className="text-cyan-600 w-6 h-6" />
+            <p>
+              Tel: 00 966 114 229 922<br />
+              Fax: 00 966 11 211 411
+            </p>
+          </div>
+          <div className="flex items-start gap-6 mb-4">
+            <Mail className="text-cyan-600 w-6 h-6" />
+            <p>info@sedra.net.sa</p>
+          </div>
+          <div className="flex items-start gap-6 mb-4">
+            <MapPin className="text-cyan-600 w-6 h-6" />
+            <p>www.sedra.net.sa</p>
           </div>
         </div>
 
-        <div>
-          <label className="mb-1 block text-sm font-medium text-gray-700 ">
-            Customer Requirements
-          </label>
-          <textarea
-            placeholder="Customer Requirements"
-            className="min-h-[120px] w-full rounded-md border border-gray-300 bg-slate-200 px-4 py-3 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#5000d2]"
-          ></textarea>
+        {/* Right: Contact Form */}
+        <div data-aos="fade-up">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-700 mb-6 tracking-widest">
+            GET IN TOUCH
+          </h2>
+          {submitted ? (
+            <div className="p-8 bg-green-50 rounded-lg text-green-700 text-center font-semibold shadow">
+              Thank you for contacting us!<br />
+              We have received your message and will get back to you soon.
+            </div>
+          ) : (
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div className="flex flex-col md:flex-row gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="Full name"
+                  className="w-full border border-gray-700 bg-transparent px-4 py-2 rounded outline-none text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-cyan-500"
+                  required
+                />
+              </div>
+              <div className="flex flex-col md:flex-row gap-4">
+                <input
+                  type="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="Your Email"
+                  className="w-full border border-gray-700 bg-transparent px-4 py-2 rounded outline-none text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-cyan-500"
+                  required
+                />
+              </div>
+              <div className="flex flex-col md:flex-row gap-4">
+                <input
+                  type="tel"
+                  name="phone"
+                  value={form.phone}
+                  onChange={handleChange}
+                  placeholder="Phone number"
+                  className="w-full border border-gray-700 bg-transparent px-4 py-2 rounded outline-none text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-cyan-500"
+                  required
+                />
+              </div>
+              <input
+                type="text"
+                name="service"
+                value={form.service}
+                onChange={handleChange}
+                placeholder="Service"
+                className="w-full border border-gray-700 bg-transparent px-4 py-2 rounded outline-none text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-cyan-500"
+                readOnly={!!service}
+              />
+              <textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                rows={5}
+                placeholder="Message"
+                className="w-full border border-gray-700 bg-transparent px-4 py-2 rounded outline-none text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-cyan-500"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                className="mt-4 px-8 py-2 bg-[#4763ad] font-semibold rounded shadow hover:bg-[#5b75be] text-white transition"
+                disabled={loading}
+              >
+                {loading ? "Sending..." : "SEND"}
+              </button>
+            </form>
+          )}
         </div>
-
-        <button
-          type="submit"
-          className="w-full rounded-md bg-[#0400d2] py-3 font-semibold text-white transition hover:bg-[#4274ff]"
-        >
-          SEND
-        </button>
-      </form>
-
-      
-
-    </section>
-
-    {/* Location Maps Section */}
-    <div className="space-y-2 py-10 px-6 text-black">
-    <h3 className="text-3xl font-semibold text-center py-6 font-sans">Our Locations</h3>
-    <div className="grid md:grid-cols-3 gap-8">
-      {/* New Delhi */}
-      <div className="space-y-2">
-        <h4 className="font-sans font-normal text-center">New Delhi, India</h4>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.80721420755!2d77.04417224953296!3d28.52755440935843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2b6a69319c1%3A0x6c1c08e61182b6e4!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1589987485271!5m2!1sen!2sin"
-          width="100%"
-          height="200"
-          allowFullScreen
-          loading="lazy"
-          className="rounded-md border"
-        ></iframe>
-      </div>
-
-      {/* Dubai */}
-      <div className="space-y-2">
-        <h4 className="font-sans font-normal text-center">Dubai, UAE</h4>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.379240239571!2d55.27078211501194!3d25.204849983897967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43490812c34f%3A0xc8c06b38fd4ffb9c!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1589987604717!5m2!1sen!2sin"
-          width="100%"
-          height="200"
-          allowFullScreen
-          loading="lazy"
-          className="rounded-md border"
-        ></iframe>
-      </div>
-
-      {/* Jeddah */}
-      <div className="space-y-2">
-        <h4 className="font-sans font-normal text-center">Jeddah, Saudi Arabia</h4>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.5129583609056!2d39.19797121500478!3d21.48581197961639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d14295e0c477%3A0x4b11bd4e544bf35d!2sJeddah%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sin!4v1589987738385!5m2!1sen!2sin"
-          width="100%"
-          height="200"
-          allowFullScreen
-          loading="lazy"
-          className="rounded-md border"
-        ></iframe>
       </div>
     </div>
-  </div>
-
-  </>
   );
 };
 
-export default ContactForm;
+export default ContactUs;

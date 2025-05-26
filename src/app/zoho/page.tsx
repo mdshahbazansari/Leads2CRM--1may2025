@@ -1,7 +1,5 @@
 "use client";
 
-
-
 // interface Testimonial {
 //   quote: string;
 //   name: string;
@@ -76,14 +74,19 @@ const services = [
 import Image from "next/image";
 import Head from "next/head";
 import { useRef } from "react";
-import { useState } from 'react';
 import Modal from '@/components/Modal';
 import WebToLeadForm from '@/components/WebToLeadForm';
+import { useRouter } from 'next/navigation';
+import { useSearchParams } from "next/navigation";
+import { useState, useEffect } from "react";
 
 
 
 export default function Home() {
 
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const source = searchParams.get('source') || '';
   const [isModalOpen, setIsModalOpen] = useState(false);
 
 
@@ -169,14 +172,14 @@ export default function Home() {
             </p>
             <button
               className="hover:bg-blue-600 rounded bg-[#0078d4ff] px-6 py-3 text-white shadow"
-              onClick={() => setIsModalOpen(true)} 
+              onClick={() => router.push(`/contact-us?source=${encodeURIComponent("Book a free Consultation")}`)}
             >
               Book a free Consultation
             </button>
 
-            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <WebToLeadForm />
-      </Modal>
+            {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+              <WebToLeadForm />
+            </Modal> */}
           </div>
 
           <div className="grid grid-cols-2 gap-4 p-4 lg:w-1/2">
@@ -376,7 +379,7 @@ export default function Home() {
                     desc: "Comprehensive CRM platform for customer-facing teams.",
                     hrefimg: "https://www.zohowebstatic.com/sites/zweb/images/productlogos/crm.svg",
                     href: "https://go.zoho.com/IId",
-                    
+
                   },
                   {
                     title: "Mail",
@@ -411,9 +414,8 @@ export default function Home() {
                     >
                       <div className="flex  items-center justify-center">
                         <img
-                          className={`h-10 w-20 ${
-                            app.title === "Mail" ? "w-[4rem]" : ""
-                          }`}
+                          className={`h-10 w-20 ${app.title === "Mail" ? "w-[4rem]" : ""
+                            }`}
                           src={app.hrefimg}
                           alt={app.title}
                         />
@@ -472,10 +474,10 @@ export default function Home() {
                   departments and increase organizational efficiency.
                 </p>
 
-              
-                 
 
-                <a 
+
+
+                <a
                   href="https://go.zoho.com/QGR"
                   type="button"
                   className="flex items-center gap-2 rounded-sm bg-[#e60028] px-6 py-3 text-sm font-semibold uppercase text-white transition hover:bg-[#b80020]"
@@ -497,7 +499,7 @@ export default function Home() {
                   </svg>
                 </a>
 
-                
+
               </div>
             </div>
 
