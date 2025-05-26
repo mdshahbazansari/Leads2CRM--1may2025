@@ -8,7 +8,7 @@ import ZohoCreatorCustomApp from "./ZohoCreatorCustomApp"
 const page = () => {
     return (
         <div>
-            <ZohoCrm />
+            {/* <ZohoCrm /> */}
             <ZohoBanner />
             <ZohoCRMIndustry />
             <ZohoCreatorCustomApp />

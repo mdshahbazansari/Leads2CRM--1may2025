@@ -70,7 +70,7 @@ export default function FAQSlider() {
     const goNext = () => setCurrent(current === faqs.length - 1 ? 0 : current + 1);
 
     return (
-        <section className="bg-[#f7ecd9] min-h-[60vh] flex flex-col justify-center items-center px-4">
+        <section className="bg-[#d9def7] min-h-[60vh] flex flex-col justify-center items-center px-4">
             <div className="max-w-6xl w-full mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl text-dark font-semibold mb-8">Frequently Asked Questions</h2>
                 <div className="relative flex items-center justify-center">

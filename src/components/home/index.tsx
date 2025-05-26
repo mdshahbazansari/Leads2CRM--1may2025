@@ -962,7 +962,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="relative min-h-screen w-full bg-black  xl:flex xl:flex-col xl:items-center xl:justify-center  ">
       <img
-        src="https://www.intellectsoft.net/assets/9f334f3a/img/home-page-experiment-5-cover.png"
+        src="/images/home-page.png"
         alt="Office meeting room with people working on computers in a dimly lit environment"
         className="absolute inset-0 h-full w-full object-cover brightness-50"
         loading="lazy"
@@ -1504,10 +1504,13 @@ const HomePage: React.FC = () => {
         </div>
 
         <div className="mt-12 flex flex-wrap gap-6  ">
-          <button
-            className="bg-blue-600 bg-[#4763AD]   px-8 py-3 text-center text-sm font-normal text-white transition hover:bg-[#517bf0] sm:text-base">
-            <Link href="#contact-us" >BOOK A FREE CONSULTATION</Link>
-          </button>
+          <Link href="/#contact-us?source=homepage">
+            <button
+              className="bg-blue-600 bg-[#4763AD]   px-8 py-3 text-center text-sm font-normal text-white transition hover:bg-[#517bf0] sm:text-base">
+              {/* <Link href="#contact-us" >BOOK A FREE CONSULTATION</Link> */}
+              BOOK A FREE CONSULTATION
+            </button>
+          </Link>
           {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <WebToLeadForm />
       </Modal> */}

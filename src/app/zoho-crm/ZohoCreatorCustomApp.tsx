@@ -25,7 +25,7 @@ export default function ZohoCreatorCustomApp() {
     ];
 
     return (
-        <section className="bg-rose-50 rounded-2xl mx-4 md:mx-28 my-4">
+        <section className="bg-[#d9def7] rounded-2xl mx-4 md:mx-28 my-4">
             <div className="max-w-5xl mx-auto py-14 px-4 text-center">
                 <div className="text-lg font-semibold mb-1 mt-2 text-gray-700">Transform your business with</div>
                 <h2 className="text-3xl md:text-5xl font-extrabold mb-6 mt-1 text-gray-700">Zoho Creator Custom App</h2>
@@ -38,7 +38,7 @@ export default function ZohoCreatorCustomApp() {
                     Read more
                 </button>
             </div>
-            <div className="bg-rose-100 rounded-b-2xl px-2 py-7">
+            <div className="bg-[#b8c2f5] rounded-b-2xl px-2 py-7">
                 <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     {steps.map((step) => (
                         <div key={step.number} className="flex items-start gap-3">

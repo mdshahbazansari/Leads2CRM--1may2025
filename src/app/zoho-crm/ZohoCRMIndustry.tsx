@@ -48,7 +48,10 @@ const industries = [
 
 export default function ZohoCRMIndustry() {
     return (
-        <section className="py-12 px-2 bg-white">
+        <section className="py-12 px-2" style={{
+            backgroundImage:
+                "url('https://sedra.net.sa/wp-content/uploads/2024/03/path-1.png')",
+        }}>
             <div className="max-w-4xl mx-auto mb-10 text-center">
                 <div className="text-lg text-sky-700 font-semibold mb-2">Ready-to-use</div>
                 <h2 className="text-3xl text-gray-700 md:text-4xl font-bold mb-4">Zoho CRM Industry Solutions</h2>
