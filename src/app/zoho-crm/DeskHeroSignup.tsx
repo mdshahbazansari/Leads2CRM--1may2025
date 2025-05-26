@@ -17,7 +17,7 @@ export default function DeskHeroSignup() {
                         service
                     </h1>
                     <p className="text-gray-700 text-lg md:text-xl max-w-xl">
-                        Power customer service at any scale, in any language, and at any hour. Zoho Desk adapts to the unique needs of the world's fastest-growing economy, empowering companies across all industries and regions.
+                        Power customer service at any scale, in any language, and at any hour. Zoho Desk adapts to the unique needs of the world fastest-growing economy, empowering companies across all industries and regions.
                     </p>
                 </div>
                 {/* Right: Signup Card */}

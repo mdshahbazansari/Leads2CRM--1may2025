@@ -156,7 +156,7 @@ const ContactUs = ({ id }) => {
                 required
                 className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-1 py-2 text-lg focus:outline-none focus:border-black transition"
               >
-                <option value="" aria-placeholder="Select a service">Select a service</option>
+                <option value="" >Select a service</option>
                 <option value="zoho crm">Zoho CRM</option>
                 <option value="zoho one">Zoho One</option>
                 <option value="zohoOne step">Zoho One Step</option>
