@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { User, Mail, Phone, Building, MessageCircle } from "lucide-react";
 import { FaCheck } from "react-icons/fa";
-import ContactUs from "@/components/contact/ContactUs";
+// import ContactUs from "@/components/contact/ContactUs";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -130,7 +130,7 @@ export default function Home() {
               Talk to Sales
             </button>
           </form>
-          <ContactUs />
+          {/* <ContactUs /> */}
         </div>
       </div>
 
