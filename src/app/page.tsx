@@ -6,7 +6,7 @@ import BusinessSection from "@/components/business";
 import BrandsClient from "@/components/client";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact-us";
-import ContactUs from "@/components/Contact-us/ContactUs";
+import ContactUs from "@/app/contact-us/ContactUs";
 import Cookies from "@/components/cookie";
 import FAQs from "@/components/Faqs";
 import Features from "@/components/Features";
@@ -27,6 +27,7 @@ import NewServices from "@/components/servicess";
 import TestimonialSection from "@/components/testim";
 // import Testimonial from "@/components/Testimonials";
 import Testimonials from "@/components/Testimonials";
+import Testimonial from "@/components/Testimonials/Testimonial";
 import Video from "@/components/Video";
 import WhyUs from "@/components/whyus";
 import { Metadata } from "next";
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   description: "We are committed to transform clients businesses and driving success in the digital age",
   // other metadata
   openGraph: {
-    
+
     title: "Maiprosoft - Expertise You Can Trust",
     description:
       "We are committed to transforming clients businesses and driving success in the digital age",
@@ -90,7 +91,8 @@ export default function Home() {
       {/* <Brands /> */}
       {/* <AboutSectionOne />
       <AboutSectionTwo /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
+      <Testimonial />
       <ContactUs id="contact-us" />
       {/* <Pricing />  */}
       {/* <FAQs/> */}

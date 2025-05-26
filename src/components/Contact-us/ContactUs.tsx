@@ -3,12 +3,15 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { db } from "@/lib/firebase"; // Adjust path as needed
 import { collection, addDoc } from "firebase/firestore";
 
 
-const ContactUs = ({ id }) => {
+const ContactUs = () => {
+
+    const pathname = usePathname();
+
     useEffect(() => {
         AOS.init({
             duration: 800,
@@ -28,7 +31,7 @@ const ContactUs = ({ id }) => {
         phone: "",
         message: "",
         service: service,
-        source: source,
+        source: pathname,
     });
     const [submitted, setSubmitted] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -61,7 +64,7 @@ const ContactUs = ({ id }) => {
     };
 
     return (
-        <div id={id} className="min-h-screen px-8 py-24 bg-white text-gray-700 font-sans"
+        <div className="min-h-screen px-8 py-24 bg-white text-gray-700 font-sans"
             style={{
                 backgroundImage:
                     "url('https://sedra.net.sa/wp-content/uploads/2024/03/path-1.png')",
@@ -144,16 +147,21 @@ const ContactUs = ({ id }) => {
                                 required
                             />
                         </div>
-                        <input
-                            type="text"
+                        <select
                             name="service"
                             value={form.service}
                             onChange={handleChange}
                             required
-                            placeholder="Service"
-                            className="w-full border border-gray-700 bg-transparent px-4 py-2 rounded outline-none text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-cyan-500"
-                            readOnly={!!service}
-                        />
+                            className="w-full border border-gray-700 bg-transparent px-4 py-2 rounded outline-none text-gray-800 focus:ring-2 focus:ring-cyan-500"
+                        >
+                            <option value="">Select a service</option>
+                            <option value="zoho crm">Zoho CRM</option>
+                            <option value="zoho one">Zoho One</option>
+                            <option value="zohoOne step">Zoho One Step</option>
+                            <option value="app development">App Development</option>
+                            <option value="other">Other</option>
+                        </select>
+
                         <textarea
                             name="message"
                             value={form.message}

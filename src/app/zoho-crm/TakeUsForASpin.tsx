@@ -5,21 +5,21 @@ import { FaPlay } from "react-icons/fa";
 export default function TakeUsForASpin() {
     return (
         <>
-            <section className="relative mt-20 rounded-2xl md:min-h-screen min-h-40 md:mx-32 mx-4 flex flex-col items-center justify-start bg-gradient-to-b from-[#cac6ff] via-[#c3dfff] to-[#d9e1f7] pt-12 pb-4">
+            <section className="relative mt-20  rounded-2xl md:min-h-screen min-h-40 md:mx-32 mx-4 flex flex-col items-center justify-start bg-gradient-to-b from-[#cac6ff] via-[#c3dfff] to-[#d9e1f7] pt-12 pb-4">
                 {/* Headline and Button */}
-                <div className="w-full flex flex-col items-center mb-0">
+                <div className="w-full flex  flex-col items-center mb-0">
                     <h1 className="text-3xl md:text-7xl font-bold text-center text-[#2176ff] mt-4 my-6 leading-tight">
                         Take us for a spin!
                     </h1>
                     <Link href="/contact-us" ><button className="flex items-center gap-3 px-6 py-4 md:py-4 md:px-4 rounded-full bg-[#e53935] hover:bg-[#c62828] transition text-white text-md md:text-xl font-semibold shadow-lg mb-8">
-                        GET IN TOUCH
+                        GET IN STARTED
                         {/* <span className="bg-white bg-opacity-20 rounded-full p-2 flex items-center justify-center">
                             <FaPlay className="text-white text-lg" />
                         </span> */}
                     </button></Link>
                 </div>
                 {/* CRM Mockup */}
-                <div className="w-full flex justify-center">
+                <div className="w-full px-20 flex justify-center">
                     <div className="relative overflow-hidden max-w-6xl w-full">
                         <img src="/video/crm-home.svg"></img>
                     </div>

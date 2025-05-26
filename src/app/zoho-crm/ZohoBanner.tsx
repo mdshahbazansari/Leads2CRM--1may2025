@@ -32,7 +32,7 @@ export default function ZohoBanner() {
     const goNext = () => setActiveTab((prev) => (prev === tabs.length - 1 ? 0 : prev + 1));
 
     return (
-        <div className="bg-[#d9def7] min-h-screen flex flex-col items-center mt-10 py-10">
+        <div className="bg-[#d9def7] min-h-screen flex flex-col items-center py-10">
             <div className="max-w-8xl w-full py-10">
                 <div className="mx-auto space-y-6">
                     <h1 className="text-4xl md:text-6xl text-center text-sky-600 font-semibold">
@@ -75,7 +75,7 @@ export default function ZohoBanner() {
                         autoPlay
                         loop
                         muted
-                        controls
+                        // controls
                         className="w-10/12 h-full object-cover rounded-2xl"
                         poster="/video/placeholder.jpg" // Optional: poster image
                     >

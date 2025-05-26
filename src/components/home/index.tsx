@@ -1504,7 +1504,7 @@ const HomePage: React.FC = () => {
         </div>
 
         <div className="mt-12 flex flex-wrap gap-6  ">
-          <Link href="/#contact-us?source=homepage">
+          <Link href="/#contact-us">
             <button
               className="bg-blue-600 bg-[#4763AD]   px-8 py-3 text-center text-sm font-normal text-white transition hover:bg-[#517bf0] sm:text-base">
               {/* <Link href="#contact-us" >BOOK A FREE CONSULTATION</Link> */}
