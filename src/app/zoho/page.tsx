@@ -79,6 +79,7 @@ import WebToLeadForm from '@/components/WebToLeadForm';
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
+import ContactUs from "@/app/contact-us/ContactUs"
 
 
 
@@ -338,6 +339,7 @@ export default function Home() {
               <div className="mb-8 flex flex-wrap gap-4">
                 <a
                   href="https://go.zoho.com/QGR"
+                  target="_blank"
                   className="hover:bg-blue-700 rounded-sm bg-[#ee0014] px-6 py-3 font-semibold text-white transition"
                 >
                   Get Started For Free
@@ -410,6 +412,7 @@ export default function Home() {
                   <li key={app.title}>
                     <a
                       href={app.href}
+                      target="_blank"
                       className="group flex items-start gap-4 text-black"
                     >
                       <div className="flex  items-center justify-center">
@@ -480,6 +483,7 @@ export default function Home() {
                 <a
                   href="https://go.zoho.com/QGR"
                   type="button"
+                  target="_blank"
                   className="flex items-center gap-2 rounded-sm bg-[#e60028] px-6 py-3 text-sm font-semibold uppercase text-white transition hover:bg-[#b80020]"
                 >
                   Try Zoho One
@@ -539,6 +543,10 @@ export default function Home() {
             src="https://www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zh-one-bg.png"
             style={{ maxWidth: 800, maxHeight: 800 }}
           />
+
+          <div className="mx-auto flex justify-center mb-10">
+            <img src="/images/zoho/sales-screen.png" alt="" className="w-3/4" />
+          </div>
         </section>
 
         <section className="bg-gray-800 py-12 text-white">
@@ -732,9 +740,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex min-h-screen items-center justify-center bg-[#fed600ff] px-4 py-12">
-          <div className="grid w-full max-w-6xl grid-cols-1 overflow-hidden rounded-xl bg-white shadow-lg md:grid-cols-2">
-            {/* Image Section */}
+        {/* <section className="flex min-h-screen items-center justify-center bg-[#fed600ff] px-4 py-12"> */}
+        {/* <div className="grid w-full max-w-6xl grid-cols-1 overflow-hidden rounded-xl bg-white shadow-lg md:grid-cols-2">
+            
             <div className="h-full w-full">
               <img
                 src="https://storage.googleapis.com/a1aa/image/Us2JN7WsDLaJNNJMIpqaYHzywSI4pbgUTaZqojgtWCQvr6fJA.jpg"
@@ -743,7 +751,7 @@ export default function Home() {
               />
             </div>
 
-            {/* Form Section */}
+            
             <div className="p-10">
               <h2 className="mb-6 text-3xl font-bold text-black md:text-4xl">
                 Book Your <span className="text-green-600">Free</span>{" "}
@@ -754,7 +762,6 @@ export default function Home() {
                 within 24 hours.
               </p>
               <form className="space-y-5">
-                {/* Full Name */}
                 <div>
                   <label
                     htmlFor="fullName"
@@ -770,7 +777,7 @@ export default function Home() {
                   />
                 </div>
 
-                {/* Email */}
+                
                 <div>
                   <label
                     htmlFor="email"
@@ -786,7 +793,7 @@ export default function Home() {
                   />
                 </div>
 
-                {/* Phone */}
+              
                 <div>
                   <label
                     htmlFor="phone"
@@ -802,7 +809,7 @@ export default function Home() {
                   />
                 </div>
 
-                {/* Description */}
+                
                 <div>
                   <label
                     htmlFor="project"
@@ -818,7 +825,7 @@ export default function Home() {
                   ></textarea>
                 </div>
 
-                {/* Submit */}
+              
                 <button
                   type="submit"
                   className="bg-green-600 hover:bg-green-700 w-full rounded-md px-6 py-3 text-white bg-sky-600 transition duration-300"
@@ -826,7 +833,7 @@ export default function Home() {
                   Submit Request
                 </button>
 
-                {/* Policy */}
+                
                 <p className="text-center text-xs text-gray-500">
                   By submitting this form, you agree to our{" "}
                   <a href="#" className="text-green-600 underline">
@@ -836,8 +843,9 @@ export default function Home() {
                 </p>
               </form>
             </div>
-          </div>
-        </section>
+          </div> */}
+        <ContactUs />
+        {/* </section> */}
       </main>
     </>
   );

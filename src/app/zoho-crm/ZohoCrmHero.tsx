@@ -6,6 +6,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { usePathname } from 'next/navigation';
 
+
 export default function ZohoCrmHero() {
 
     const [loading, setLoading] = useState(false);
@@ -84,14 +85,19 @@ export default function ZohoCrmHero() {
                     </Link>
                 </div>
                 {/* Right: Form Card */}
-                <div className="flex-1 flex justify-center z-10"
-                // style={{
-                //     backgroundImage:
-                //         "url('images/bg4.jpg')",
-                //     backgroundRepeat: "no-repeat",
-                // }}
+                <div className="flex-1 flex justify-end z-10"
+                    style={{
+                        backgroundImage: "url('/images/bg7.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        // transform: "rotate(-10deg)",
+                    }}
                 >
-                    <div className="bg-[#ffffff35] rounded-2xl shadow-xl p-8 w-full max-w-sm">
+                    {/* <div className="w-full">
+                        <img src="/images/bg7.png" alt="" />
+                    </div> */}
+                    <div className="bg-[#ffffff6b] rounded-2xl shadow-xl p-8 w-full max-w-sm">
                         <div className="text-gray-900 text-lg font-semibold my-6 text-center">
                             Get 15-day free trial
                         </div>
@@ -102,7 +108,7 @@ export default function ZohoCrmHero() {
                                 value={form.name}
                                 onChange={handleChange}
                                 placeholder="Full Name *"
-                                className="w-full border bg-[#ffffff6c] border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425b9f]"
+                                className="w-full border bg-[#ffffff7f] border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425b9f]"
                                 required
                             />
                             <input
@@ -121,7 +127,7 @@ export default function ZohoCrmHero() {
                                     value={form.phone}
                                     onChange={handleChange}
                                     placeholder="Phone Number *"
-                                    className="w-full border rounded bg-[#ffffff5d] border-gray-300 rounded-r px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425b9f]"
+                                    className="w-full border rounded bg-[#ffffff89] border-gray-300 rounded-r px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425b9f]"
                                     required
                                 />
                             </div>

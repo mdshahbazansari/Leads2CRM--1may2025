@@ -186,7 +186,7 @@ const ContactUs = () => {
                             {loading ? "Sending..." : "Send message"}
                         </button>
                         {submitted && (
-                            <div className="bg-teal-600 px-2 py-4 text-white rounded shadow text-center font-semibold mt-4">
+                            <div className="bg-teal-600 px-2 py-4 text-white rounded shadow text-center font-semibold">
                                 Thank you for contacting us!<br />
                                 We have received your message and will get back to you soon.
                             </div>
