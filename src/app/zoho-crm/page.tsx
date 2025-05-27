@@ -19,7 +19,7 @@ const page = () => {
             <ZohoBanner />
             <ZohoCRMIndustry />
             <ZohoCreatorCustomApp />
-            <ContactUs id="contactUs" />
+            <ContactUs />
             {/* <TakeUsForASpin /> */}
             <FAQSlider />
         </div>

@@ -5,7 +5,7 @@ import { db } from "@/lib/firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { Mail, MapPin, Phone } from "lucide-react";
 
-const ContactUs = ({ id }) => {
+const ContactUs = () => {
     const pathname = usePathname();
     useEffect(() => {
         // AOS or any animation init here if needed
@@ -52,7 +52,7 @@ const ContactUs = ({ id }) => {
 
     return (
         <div
-            id={id}
+            id="contactUs"
             className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#cac6ff] via-[#c3dfff] to-[#d9e1f7] px-2 py-16"
         >
             <div className="w-full max-w-6xl rounded-2xl bg-gradient-to-b from-[#ffffff] via-[#f5f9ff] to-[#d9e1f7] relative p-8 overflow-hidden">

@@ -93,7 +93,7 @@ export default function Home() {
       <AboutSectionTwo /> */}
       {/* <Testimonials /> */}
       <Testimonial />
-      <ContactUs id="contact-us" />
+      <ContactUs  />
       {/* <Pricing />  */}
       {/* <FAQs/> */}
       {/* <Blog /> */}
