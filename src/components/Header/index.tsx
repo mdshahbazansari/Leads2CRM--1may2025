@@ -532,42 +532,50 @@ const Header = () => {
             {
               "text": "Energy & Utilities",
               "url": "#",
-              "contentKey": "energyUtilities"
+              "contentKey": "energyUtilities",
+              "icon": 'images/icon/header-icon/energy.png'
             },
             {
               "text": "Retail &  Consumer Goods",
               "url": "#",
-              "contentKey": "retailConsumerGoods"
+              "contentKey": "retailConsumerGoods",
+              "icon": 'images/icon/header-icon/ecomm.png'
             },
             {
               "text": "Healthcare &  Life Sciences",
               "url": "#",
-              "contentKey": "healthcareLifeSciences"
+              "contentKey": "healthcareLifeSciences",
+              "icon": 'images/icon/header-icon/healthcares.png'
             },
             {
               "text": "Government &  Public Sector",
               "url": "#",
-              "contentKey": "governmentPublicSector"
+              "contentKey": "governmentPublicSector",
+              "icon": 'images/icon/header-icon/government.png'
             },
             {
               "text": "Technology &  Communications",
               "url": "#",
-              "contentKey": "technologyCommunications"
+              "contentKey": "technologyCommunications",
+              "icon": 'images/icon/header-icon/technologycomm.png'
             },
             {
               "text": "Hitech &  Semiconductor",
               "url": "#",
-              "contentKey": "hitechSemiconductor"
+              "contentKey": "hitechSemiconductor",
+              "icon": 'images/icon/header-icon/fintech.png'
             },
             {
               "text": "Aerospace &  Defense",
               "url": "#",
-              "contentKey": "aerospaceDefense"
+              "contentKey": "aerospaceDefense",
+              "icon": 'images/icon/header-icon/defence.png'
             },
             {
               "text": "Industrial Manufacturing",
               "url": "#",
-              "contentKey": "industrialManufacturing"
+              "contentKey": "industrialManufacturing",
+              "icon": 'images/icon/header-icon/industrys.png'
             }
           ]
 
@@ -801,7 +809,9 @@ const Header = () => {
 
                             <div className="grid grid-cols-2 gap-4">
                               {menu?.items[hoveredIndex]?.subtitle?.map((sub, idx) => (
-                                <div key={idx} className="flex items-start list-disc space-y-2 text-gray-700">
+                                <div key={idx} className="flex items-center list-disc space-y-2 text-gray-700">
+
+                                  <img src={sub.icon} alt={sub.altText} className='mr-4 w-6 mt-2 items-center' />
                                   <li
                                     className="text-sm font-medium text-gray-600 whitespace-nowrap"
                                     style={{ width: '100%', listStyleType: 'none' }}

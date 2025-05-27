@@ -8,6 +8,8 @@ import ZohoCrmHero from "./ZohoCrmHero"
 import DeskHeroSignup from "./DeskHeroSignup"
 // import ContactUs from "@/components/Contact-us/ContactUs"
 import ContactUs from "@/app/contact-us/ContactUs"
+import ZohoEcosystemAnimated from "./ZohoEcosystemAnimated"
+import EstimateProjectBanner from "@/components/EstimateProjectBanner/EstimateProjectBanner"
 
 
 const page = () => {
@@ -17,8 +19,10 @@ const page = () => {
             <ZohoCrmHero />
             {/* <DeskHeroSignup /> */}
             <ZohoBanner />
+            {/* <EstimateProjectBanner /> */}
             <ZohoCRMIndustry />
             <ZohoCreatorCustomApp />
+            <ZohoEcosystemAnimated />
             <ContactUs />
             {/* <TakeUsForASpin /> */}
             <FAQSlider />
