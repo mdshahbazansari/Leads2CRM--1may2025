@@ -53,9 +53,9 @@ const ContactUs = () => {
   return (
     <div
       id="contactUs"
-      className="min-h-screen mt-12 flex items-center justify-center bg-gradient-to-b from-[#cac6ff] via-[#c3dfff] to-[#d9e1f7] px-2 py-16"
+      className="min-h-screen mt-12 flex items-center justify-center bg-white px-2 py-16"
     >
-      <div className="w-full max-w-6xl rounded-2xl bg-gradient-to-b from-[#ffffff] via-[#f5f9ff] to-[#d9e1f7] relative p-6 overflow-hidden">
+      <div className="w-full max-w-6xl rounded-2xl  bg-gradient-to-b from-[#beb5ff] via-[#91a5ff] to-[#ffffff] relative p-6 overflow-hidden">
         {/* Browser bar mock */}
         <div className="flex items-center px-6 pt-6 pb-4">
           <div className="w-16 h-5 bg-[#e6f3e6] rounded-full mr-auto"></div>
@@ -76,7 +76,7 @@ const ContactUs = () => {
               Lets chat.
             </h2>
             <div className="hidden md:block mt-6 space-y-8">
-              <div className="gap gap-y-10 text-gray-700" data-aos="fade-right">
+              <div className="gap gap-y-10 text-gray-700" >
                 <div className="flex items-start gap-6 mb-4">
                   <MapPin className="text-cyan-600 w-6 h-6" />
                   <p className="mb-4 leading-relaxed text-gray-700">
@@ -116,7 +116,7 @@ const ContactUs = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Name"
-                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                className="w-full border-b text-gray-700 placeholder-slate-700 border-gray-500 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
                 required
               />
             </div>
@@ -129,7 +129,7 @@ const ContactUs = () => {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Email"
-                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                className="w-full border-b text-gray-700 placeholder-slate-700 border-gray-500 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
                 required
               />
             </div>
@@ -142,7 +142,7 @@ const ContactUs = () => {
                 value={form.phone}
                 onChange={handleChange}
                 placeholder="Phone"
-                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                className="w-full border-b text-gray-700 placeholder-slate-700 border-gray-500 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
                 required
               />
             </div>
@@ -154,7 +154,7 @@ const ContactUs = () => {
                 value={form.service}
                 onChange={handleChange}
                 required
-                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-1 py-2 text-lg focus:outline-none focus:border-black transition"
+                className="w-full border-b text-gray-700 placeholder-slate-700 border-gray-500 bg-transparent px-1 py-2 text-lg focus:outline-none focus:border-black transition"
               >
                 <option value="" >Select a service</option>
                 <option value="zoho crm">Zoho CRM</option>
@@ -173,7 +173,7 @@ const ContactUs = () => {
                 onChange={handleChange}
                 placeholder="Message"
                 rows={3}
-                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition resize-none"
+                className="w-full border-b placeholder-slate-700 text-gray-700 border-gray-500 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition resize-none"
                 required
               />
             </div>

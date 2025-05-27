@@ -20,3 +20,15 @@
     }
   
 }
+
+@keyframes vertical-marquee {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+.marquee-vertical {
+  animation: vertical-marquee 16s linear infinite;
+  will-change: transform;
+}
+.marquee-vertical:hover {
+  animation-play-state: paused;
+}

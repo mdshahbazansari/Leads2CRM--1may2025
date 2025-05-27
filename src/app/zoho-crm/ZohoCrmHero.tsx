@@ -108,7 +108,7 @@ export default function ZohoCrmHero() {
                                 value={form.name}
                                 onChange={handleChange}
                                 placeholder="Full Name *"
-                                className="w-full border bg-[#ffffff7f] border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425b9f]"
+                                className="w-full border placeholder-slate-600 bg-[#ffffff7f] border-gray-400 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425b9f]"
                                 required
                             />
                             <input
@@ -117,7 +117,7 @@ export default function ZohoCrmHero() {
                                 value={form.email}
                                 onChange={handleChange}
                                 placeholder="Email *"
-                                className="w-full border bg-[#ffffff5d] border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425b9f]"
+                                className="w-full border placeholder-slate-600 bg-[#ffffff7f] border-gray-400 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425b9f]"
                                 required
                             />
                             <div className="flex">
@@ -127,7 +127,7 @@ export default function ZohoCrmHero() {
                                     value={form.phone}
                                     onChange={handleChange}
                                     placeholder="Phone Number *"
-                                    className="w-full border rounded bg-[#ffffff89] border-gray-300 rounded-r px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425b9f]"
+                                    className="w-full border rounded placeholder-slate-600 bg-[#ffffff7f] border-gray-400 rounded-r px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425b9f]"
                                     required
                                 />
                             </div>

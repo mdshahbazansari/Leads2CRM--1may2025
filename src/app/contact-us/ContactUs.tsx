@@ -55,7 +55,7 @@ const ContactUs = () => {
             id="contactUs"
             className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#cac6ff] via-[#c3dfff] to-[#d9e1f7] px-2 py-16"
         >
-            <div className="w-full max-w-6xl rounded-2xl bg-gradient-to-b from-[#ffffff] via-[#f5f9ff] to-[#d9e1f7] relative p-8 overflow-hidden">
+            <div className="w-full max-w-6xl rounded-2xl bg-gradient-to-b from-[#ffffff] via-[#f5f9ff] to-[#d9e1f7] relative md:p-8 overflow-hidden">
                 {/* Browser bar mock */}
                 <div className="flex items-center px-6 pt-6 pb-4">
                     <div className="w-16 h-5 bg-[#e6f3e6] rounded-full mr-auto"></div>
@@ -67,45 +67,45 @@ const ContactUs = () => {
                 </div>
                 {/* Main form */}
                 <form
-                    className="px-8 pb-8 pt-2 flex flex-col md:flex-row gap-8"
+                    className="px-8 pb-8 pt-2 flex flex-col justify-center md:flex-row gap-8"
                     onSubmit={handleSubmit}
                 >
                     {/* Left: Heading and labels */}
                     <div className="flex-1 flex flex-col justify-start">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-8 mt-6  text-gray-700 tracking-widest">
+                        <h2 className="text-2xl md:text-4xl font-bold mb-8  text-gray-700 tracking-widest">
                             Lets chat.
                         </h2>
-                        <div className="hidden md:block mt-6 space-y-8">
-                            <div className="gap gap-y-10 text-gray-700" data-aos="fade-right">
+                        <div className=" mt-6 space-y-8">
+                            <div className="gap gap-y-14 text-sm md:text-lg  text-gray-700">
                                 <div className="flex items-start gap-6 mb-4">
                                     <MapPin className="text-cyan-600 w-6 h-6" />
-                                    <p className="mb-4 leading-relaxed text-gray-700">
+                                    <p className="mb-4 font-semibold leading-relaxed text-gray-700">
                                         Kingdom of Saudi Arabia<br />
-                                        AL Madinah Al Monwarah street, <br /> Al Bawadi Dis, Al Madina Plaza Building,
+                                        AL Madinah Al Monwarah street, <br /> Al Bawadi Dis, Al Madina Plaza Building,<br />
                                         Floor 5, Office 505
                                     </p>
                                 </div>
-                                <div className="flex items-start gap-6 mb-4">
+                                <div className="flex  items-start gap-6 mb-4">
                                     <Phone className="text-cyan-600 w-6 h-6" />
-                                    <p>
+                                    <p className="font-semibold">
                                         Tel: 00 966 114 229 922<br />
                                         Fax: 00 966 11 211 411
                                     </p>
                                 </div>
                                 <div className="flex items-start gap-6 mb-4">
                                     <Mail className="text-cyan-600 w-6 h-6" />
-                                    <p>info@sedra.net.sa</p>
+                                    <p className="font-semibold">info@sedra.net.sa</p>
                                 </div>
                                 <div className="flex items-start gap-6 mb-4">
                                     <MapPin className="text-cyan-600 w-6 h-6" />
-                                    <p>www.sedra.net.sa</p>
+                                    <p className="font-semibold">www.sedra.net.sa</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {/* Right: Inputs */}
                     <div className="flex-1 flex flex-col gap-4 justify-center">
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-700 mb-6 tracking-widest">
+                        <h2 className="text-2xl md:text-4xl font-bold text-gray-700 mb-6 tracking-widest">
                             GET IN TOUCH
                         </h2>
                         <div>

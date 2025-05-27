@@ -19,9 +19,9 @@ export default function TakeUsForASpin() {
                     </button></Link>
                 </div>
                 {/* CRM Mockup */}
-                <div className="w-full px-20 flex justify-center">
-                    <div className="relative overflow-hidden max-w-6xl w-full">
-                        <img src="/video/crm-home.svg"></img>
+                <div className="w-full px-4 sm:px-10 md:px-20 flex justify-center">
+                    <div className="relative overflow-hidden w-full md:max-w-6xl">
+                        <img src="/video/crm-home.svg" className="w-full h-auto object-contain" alt="CRM Home" />
                     </div>
                 </div>
             </section>

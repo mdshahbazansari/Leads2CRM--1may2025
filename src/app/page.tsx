@@ -32,6 +32,8 @@ import Video from "@/components/Video";
 import WhyUs from "@/components/whyus";
 import { Metadata } from "next";
 import { FaQq } from "react-icons/fa";
+import FAQ from "@/components/FAQ/FAQ";
+import FAQSlider from "./zoho-crm/FAQSlider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.leads2crm.com"),
@@ -93,7 +95,8 @@ export default function Home() {
       <AboutSectionTwo /> */}
       {/* <Testimonials /> */}
       <Testimonial />
-      <ContactUs  />
+      <FAQ />
+      <ContactUs />
       {/* <Pricing />  */}
       {/* <FAQs/> */}
       {/* <Blog /> */}
