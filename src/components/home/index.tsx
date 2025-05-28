@@ -317,7 +317,7 @@
 //             {/* Card Wrapper */}
 
 //             {/* card 1  */}
-//             <div className="scroll-snap-start flex h-48 min-w-[8rem] sm:min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-blue ">
+//             <div className="scroll-snap-start flex h-48 min-w-[8rem] sm:min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-mai ">
 //               <a
 //                 className="flex flex-col items-center justify-center text-sm "
 //                 href=""
@@ -391,7 +391,7 @@
 
 //             {/* card 2  */}
 
-//             <div className="scroll-snap-start  flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-blue sm:min-w-[8rem]">
+//             <div className="scroll-snap-start  flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-mai sm:min-w-[8rem]">
 //               <a className="flex flex-col items-center justify-center " href="#">
 //                 {/* SVG */}
 
@@ -445,7 +445,7 @@
 
 //             {/* card 3 */}
 
-//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-blue sm:min-w-[8rem]">
+//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-mai sm:min-w-[8rem]">
 //               <a className="flex flex-col items-center justify-center" href="#">
 //                 {/* SVG */}
 
@@ -535,7 +535,7 @@
 //             </div>
 
 //             {/* card 4  */}
-//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-blue sm:min-w-[8rem]">
+//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-mai sm:min-w-[8rem]">
 //               <a
 //                 className="flex flex-col items-center justify-center text-center text-sm"
 //                 href=""
@@ -584,7 +584,7 @@
 
 //             {/* card 5 */}
 
-//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-blue sm:min-w-[8rem]">
+//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-mai sm:min-w-[8rem]">
 //               <a className="flex flex-col items-center justify-center" href="#">
 //                 {/* SVG */}
 
@@ -628,7 +628,7 @@
 
 //             {/* card 6 */}
 
-//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-blue sm:min-w-[8rem]">
+//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-mai sm:min-w-[8rem]">
 //               <a className="flex flex-col items-center justify-center" href="#">
 //                 {/* SVG */}
 
@@ -722,7 +722,7 @@
 
 //             {/* card 7 */}
 
-//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-blue sm:min-w-[8rem]">
+//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-mai sm:min-w-[8rem]">
 //               <a className="flex flex-col items-center justify-center" href="#">
 //                 {/* SVG */}
 
@@ -808,7 +808,7 @@
 
 //             {/* card 8 */}
 
-//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-blue sm:min-w-[8rem]">
+//             <div className="scroll-snap-start flex h-48 min-w-[8rem] xl:min-w-[12rem] items-center justify-around rounded-2xl border border-neutral-700 bg-[#272727ab] text-center backdrop-blur-xl duration-200 ease-linear hover:bg-white hover:text-mai sm:min-w-[8rem]">
 //               <a
 //                 className="flex flex-col items-center justify-center text-center"
 //                 href="#"
@@ -893,7 +893,7 @@
 //             Book a free consultation
 //           </button>
 
-//           <button className="border-2 border-blue  px-4 py-3 md:px-8 md:py-6  text-sm xl:text-2xl duration-150 hover:bg-blue">
+//           <button className="border-2 border-mai  px-4 py-3 md:px-8 md:py-6  text-sm xl:text-2xl duration-150 hover:bg-mai">
 //             View Portfolio
 //           </button>
 //         </div>
@@ -979,7 +979,7 @@ const HomePage: React.FC = () => {
 
         <div className="mx-auto mt-12  max-w-[72rem]">
           <div className="scrollbar-hide -ml-2 flex   gap-2 overflow-x-auto px-2 sm:-mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 xl:gap-4">
-            <div className=" flex h-32 w-28  flex-shrink-0 cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-blue xl:h-40 xl:w-32">
+            <div className=" flex h-32 w-28  flex-shrink-0 cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-mai xl:h-40 xl:w-32">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="57"
@@ -1046,7 +1046,7 @@ const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className=" flex h-32 w-28 flex-shrink-0  cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-blue xl:h-40 xl:w-32">
+            <div className=" flex h-32 w-28 flex-shrink-0  cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-mai xl:h-40 xl:w-32">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="57"
@@ -1094,7 +1094,7 @@ const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className="flex h-32 w-28  flex-shrink-0 cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-blue xl:h-40 xl:w-32">
+            <div className="flex h-32 w-28  flex-shrink-0 cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-mai xl:h-40 xl:w-32">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="57"
@@ -1179,7 +1179,7 @@ const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className="flex h-32 w-32  flex-shrink-0 cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white  shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-blue xl:h-40 xl:w-36">
+            <div className="flex h-32 w-32  flex-shrink-0 cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white  shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-mai xl:h-40 xl:w-36">
               <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="1.4" y="0.65" width="54.7" height="54.7" rx="27.35" stroke="currentColor" stroke-width="1.3"></rect>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5833 41.9023C27.2707 41.9023 26.9586 41.8533 26.6611 41.7541L16.7438 38.4484C15.5515 38.0506 14.75 36.9387 14.75 35.6811V34.9612C14.75 33.7041 15.5515 32.5923 16.7438 32.1945L23.899 29.8098L24.2677 30.9164L17.1131 33.3011C16.3973 33.5396 15.9167 34.207 15.9167 34.9612V35.6811C15.9167 36.4353 16.3973 37.1026 17.1131 37.3412L27.0297 40.647C27.3862 40.766 27.7793 40.766 28.1369 40.647L39.803 36.7579C40.5193 36.5193 41 35.8526 41 35.0977V34.3779C41 33.6236 40.5193 32.9563 39.803 32.7177L32.6513 30.3336L33.02 29.2271L40.1723 31.6111C41.3652 32.009 42.1667 33.1208 42.1667 34.3779V35.0977C42.1667 36.3554 41.3652 37.4672 40.1723 37.8651L28.5062 41.7541C28.2081 41.8533 27.896 41.9023 27.5833 41.9023ZM27.5833 37.9463C27.5209 37.9463 27.4591 37.9364 27.399 37.9166L18.649 34.9999C18.4104 34.9206 18.25 34.6977 18.25 34.4463C18.25 34.1949 18.4104 33.9726 18.649 33.8927L25.649 31.5594L26.0177 32.6666L20.6778 34.4463L27.5833 36.7481L36.2388 33.863L30.8984 32.0832L31.2671 30.9761L38.2677 33.3094C38.5063 33.3893 38.6667 33.6116 38.6667 33.863C38.6667 34.1144 38.5063 34.3372 38.2677 34.4166L27.7677 37.9166C27.7076 37.9364 27.6458 37.9463 27.5833 37.9463Z" fill="currentColor" stroke="currentColor" stroke-width="0.3"></path>
@@ -1191,7 +1191,7 @@ const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className=" flex h-32 w-28 flex-shrink-0 cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-blue xl:h-40 xl:w-32">
+            <div className=" flex h-32 w-28 flex-shrink-0 cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-mai xl:h-40 xl:w-32">
               <svg
                 width="57"
                 height="56"
@@ -1229,7 +1229,7 @@ const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className="flex h-32 w-28 flex-shrink-0  cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-blue xl:h-40 xl:w-32">
+            <div className="flex h-32 w-28 flex-shrink-0  cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-mai xl:h-40 xl:w-32">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="57"
@@ -1317,7 +1317,7 @@ const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className="flex h-32 w-28 flex-shrink-0  cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-blue xl:h-40 xl:w-32">
+            <div className="flex h-32 w-28 flex-shrink-0  cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-mai xl:h-40 xl:w-32">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="57"
@@ -1399,7 +1399,7 @@ const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className=" flex h-32 w-28 flex-shrink-0   cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-blue xl:h-40 xl:w-32">
+            <div className=" flex h-32 w-28 flex-shrink-0   cursor-pointer flex-col items-center justify-between rounded-lg bg-white bg-opacity-[0.25] py-4 text-white shadow-lg backdrop-blur-sm hover:bg-slate-100 hover:text-mai xl:h-40 xl:w-32">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="57"
@@ -1473,7 +1473,7 @@ const HomePage: React.FC = () => {
                 key={index}
                 className={`${
                   industry.highlighted
-                    ? "text-blue-600 bg-white bg-opacity-[0.25] text-white"
+                    ? "text-mai-600 bg-white bg-opacity-[0.25] text-white"
                     : "bg-white bg-opacity-[0.25] text-white"
                 } flex h-32 w-28 flex-shrink-0 cursor-pointer flex-col items-center justify-center rounded-lg shadow-lg xl:h-40 xl:w-32`}
               >
@@ -1506,7 +1506,7 @@ const HomePage: React.FC = () => {
         <div className="mt-12 flex flex-wrap gap-6  ">
           <Link href="/#contactUs">
             <button
-              className="bg-blue-600 bg-[#4763AD]   px-8 py-3 text-center text-sm font-normal text-white transition hover:bg-[#517bf0] sm:text-base">
+              className="bg-mai-600 bg-mai   px-8 py-3 text-center text-sm font-normal text-white transition hover:bg-maihover sm:text-base">
               {/* <Link href="#contact-us" >BOOK A FREE CONSULTATION</Link> */}
               BOOK A FREE CONSULTATION
             </button>
@@ -1514,7 +1514,7 @@ const HomePage: React.FC = () => {
           {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <WebToLeadForm />
       </Modal> */}
-          <button className="hover:bg-blue-600 border border-[#4763AD]  px-6 py-3 text-center text-xs font-normal text-white transition hover:bg-[#4763AD] hover:text-white sm:text-sm">
+          <button className="hover:bg-mai-600 border border-mai  px-6 py-3 text-center text-xs font-normal text-white transition hover:bg-mai hover:text-white sm:text-sm">
             VIEW PORTFOLIO
           </button>
         </div>

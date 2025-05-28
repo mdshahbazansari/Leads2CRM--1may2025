@@ -32,10 +32,10 @@ export default function ZohoBanner() {
     const goNext = () => setActiveTab((prev) => (prev === tabs.length - 1 ? 0 : prev + 1));
 
     return (
-        <div className="bg-[#d9def7] min-h-screen flex flex-col items-center py-10">
-            <div className="max-w-8xl w-full py-10">
+        <div className="bg-[#ffffff2f] min-h-screen flex flex-col items-center pt-10">
+            <div className="max-w-8xl w-full pt-10">
                 <div className="mx-auto space-y-6">
-                    <h1 className="text-4xl md:text-6xl text-center text-sky-600 font-semibold">
+                    <h1 className="text-4xl md:text-6xl text-center text-mai font-semibold">
                         Teams that work together,<br /> win together
                     </h1>
                     <p className="text-xl md:text-3xl mx-auto px-4 md:px-36 text-center text-black">
@@ -85,7 +85,7 @@ export default function ZohoBanner() {
                     <button
                         onClick={goNext}
                         aria-label="Next video"
-                        className="absolute right-4 md:right-16 md:p-3 z-10 bg-[#f5c99c] hover:bg-[#ffe3c1] text-[#232c4d] p-2 rounded-full shadow transition"
+                        className="absolute right-4 md:right-16 md:p-3 z-10 bg-[#f5c99c] hover:bg-[#ffe3c1] text-mai p-2 rounded-full shadow transition"
                     >
                         <FaChevronRight size={20} />
                     </button>

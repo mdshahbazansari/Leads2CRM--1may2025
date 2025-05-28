@@ -65,15 +65,15 @@ export default function Testimonial() {
                     "url('https://sedra.net.sa/wp-content/uploads/2024/03/path-1.png')",
             }}
             className="py-10 lg:py-20 px-6 bg-gray-50 text-black">
-            <div className="max-w-6xl mx-auto">
-                <h2 className="text-sm text-[#4763ad] font-semibold uppercase mb-1 font-sans">
+            <div className="max-w-6xl mx-auto" >
+                <h2 className="text-sm text-mai font-semibold uppercase mb-1 font-sans">
                     Our Testimonials
                 </h2>
                 <h3 className="text-3xl font-semibold mb-4 tracking-tight">
                     What They&lsquo;re Saying?
                 </h3>
 
-                <div className="relative bg-[#4763ad] text-white px-6 py-12 lg:px-10 lg:pt-20 lg:pb-28  shadow-lg">
+                <div data-aos="fade-up" className="relative bg-mai text-white px-6 py-12 lg:px-10 lg:pt-20 lg:pb-28  shadow-lg">
                     <div
                         key={current}
                         className="flex flex-col items-start gap-6 transition-all duration-300 ease-in-out"
@@ -88,7 +88,7 @@ export default function Testimonial() {
                                     className="rounded-md object-cover"
                                 />
                             </div>
-                            <div className="absolute top-0 left-0 translate-x-2 translate-y-2 w-full h-full border-2 border-sky-500 rounded-md -z-10"></div>
+                            <div className="absolute top-0 left-0 translate-x-2 translate-y-2 w-full h-full border-2 border-mai rounded-md -z-10"></div>
                         </div>
 
                         <div>

@@ -35,6 +35,7 @@ import { FaQq } from "react-icons/fa";
 import FAQ from "@/components/FAQ/FAQ";
 import FAQSlider from "./zoho-crm/FAQSlider";
 import EstimateProjectBanner from "@/components/EstimateProjectBanner/EstimateProjectBanner";
+import ZohoCRMIndustry from "./zoho-crm/ZohoCRMIndustry";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.leads2crm.com"),
@@ -71,6 +72,7 @@ export default function Home() {
       <ScrollUp />
       <Homes />
       <ExpertiseSection />
+      <ZohoCRMIndustry />
       {/* <MeetClients/>
       <PartnerSection/> */}
 

@@ -8,14 +8,26 @@ import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
+
   children,
 }: {
   children: React.ReactNode;
 }) {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+
   return (
     <html suppressHydrationWarning lang="en">
       {/*

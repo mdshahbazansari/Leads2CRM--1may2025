@@ -34,7 +34,7 @@ export default function ZohoCreatorCustomApp() {
                     If you have not found one and are still using your Excel spreadsheets (which are quick to create but hard to share and keep current),
                     its time to build your own custom app with our expert Zoho developer team.
                 </p>
-                <button className="mt-2 px-8 py-2 border border-[#c9a59a] rounded-md text-[#3d2b1f] font-medium hover:bg-[#ffe0d7] transition">
+                <button className="mt-2 px-8 py-2 border border-[#c9a59a]  text-[#3d2b1f] font-medium hover:bg-[#ffe0d7] transition">
                     Read more
                 </button>
             </div>

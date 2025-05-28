@@ -106,7 +106,7 @@ export default function ZohoEcosystemAnimated() {
     }, []);
 
     return (
-        <section className="w-10/12  rounded-lg my-10 mx-auto min-h-screen flex items-center justify-center bg-gradient-to-br from-[#22314f] to-[#425b9f] px-4 py-12">
+        <section className="w-10/12  rounded-lg my-10 mx-auto min-h-screen flex items-center justify-center bg-gradient-to-br from-mai to-[#005fb8] px-4 py-12">
             <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
                 {/* Left: Cards in fixed positions */}
                 <div className="relative flex-1 flex items-center justify-center min-h-[480px]">

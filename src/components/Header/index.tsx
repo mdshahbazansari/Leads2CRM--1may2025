@@ -25,11 +25,13 @@ const Header = () => {
               text: "Zoho",
               url: "/zoho",
               contentKey: "api",
+              "icon": 'images/icon/header-icon/zoho.png'
             },
             {
               text: "Zoho-CRM",
               url: "/zoho-crm",
               contentKey: "api",
+              "icon": 'images/icon/header-icon/zohocrm.png'
             },
             // {
             //   text: "Zoho CRM",
@@ -145,25 +147,29 @@ const Header = () => {
               "text": "Enterprise IT Services",
               "url": "https://example.com/enterprise-it",
               "altText": "ERP, SAP, and Oracle implementations",
-              "contentKey": "enterpriseIT"
+              "contentKey": "enterpriseIT",
+              "icon": 'images/icon/header-icon/itservice.png'
             },
             {
               "text": "Application Development & Maintenance Services",
               "url": "https://example.com/application-development",
               "altText": "Custom Software, Legacy Modernisation",
-              "contentKey": "applicationDevelopment"
+              "contentKey": "applicationDevelopment",
+              "icon": 'images/icon/header-icon/appdevelopment.png'
             },
             {
               "text": "Digital Transformation",
               "url": "digitrans#page",
               "altText": "Strategy, Automation and Process Optimization, Blockchain, UX/UI Design and Customer Experience",
-              "contentKey": "digitalTransformation"
+              "contentKey": "digitalTransformation",
+              "icon": 'images/icon/header-icon/digitalization.png'
             },
             {
               "text": "Cloud Services",
               "url": "cloudser#page",
               "altText": "Hybrid Cloud Strategy, Cloud Migration and Management, Edge Computing",
-              "contentKey": "cloudServices"
+              "contentKey": "cloudServices",
+              "icon": 'images/icon/header-icon/cloud.png'
             },
             // {
             //   "text": "IoT Services",
@@ -340,27 +346,33 @@ const Header = () => {
             {
               "text": "Case Study",
               "url": "https://example.com/case-study",
-              "contentKey": "caseStudy"
+              "contentKey": "caseStudy",
+              "icon": 'images/icon/header-icon/case-study.png'
+
             },
             {
               "text": "Tech Articles",
               "url": "https://example.com/tech-articles",
-              "contentKey": "techArticles"
+              "contentKey": "techArticles",
+              "icon": 'images/icon/header-icon/tech-artical.png'
             },
             {
               "text": "Our Client & Testimonials",
               "url": "https://example.com/client-testimonials",
-              "contentKey": "clientTestimonials"
+              "contentKey": "clientTestimonials",
+              "icon": 'images/icon/header-icon/testimonial.png'
             },
             {
               "text": "Career",
               "url": "https://example.com/career",
-              "contentKey": "career"
+              "contentKey": "career",
+              "icon": 'images/icon/header-icon/career.png'
             },
             {
               "text": "FAQ",
-              "url": "https://example.com/faq",
-              "contentKey": "faq"
+              "url": "#faq",
+              "contentKey": "faq",
+              "icon": 'images/icon/header-icon/faq.png'
             },
           ],
         },
@@ -378,46 +390,55 @@ const Header = () => {
               text: "React.js",
               url: "frontend#react-js",
               contentKey: "erpSolutions",
+              "icon": 'images/icon/header-icon/react.png'
             },
             {
               text: "Next.js",
               url: "frontend#next-js",
               contentKey: "operationsManagement",
+              "icon": 'images/icon/header-icon/next.png'
             },
             {
               text: "Vue.js ",
               url: "frontend#vue-js",
               contentKey: "financialManagement",
+              "icon": 'images/icon/header-icon/vue.png'
             },
             {
               text: "Angular ",
               url: "frontend#angular",
               contentKey: "financialManagement",
+              "icon": 'images/icon/header-icon/angular.png'
             },
             {
               text: "HTML5 & CSS3 ",
               url: "frontend#html-css",
               contentKey: "financialManagement",
+              "icon": 'images/icon/header-icon/htmlcss.png'
             },
             {
               text: "Tailwind CSS ",
               url: "frontend#tailwind-css",
               contentKey: "financialManagement",
+              "icon": 'images/icon/header-icon/tailwind.svg'
             },
             {
               text: " Bootstrap ",
               url: "frontend#bootstrap",
               contentKey: "financialManagement",
+              "icon": 'images/icon/header-icon/bootstrap.png'
             },
             {
               text: "Sass ",
               url: "frontend#sass",
               contentKey: "financialManagement",
+              "icon": 'images/icon/header-icon/saas.png'
             },
             {
               text: " jQuery ",
               url: "frontend#jquery",
               contentKey: "financialManagement",
+              "icon": 'images/icon/header-icon/jquery.png'
             },
           ],
         },
@@ -590,37 +611,39 @@ const Header = () => {
           icon: "/images/Maiprosoft-menu/About us/About us.svg",
           subtitle: [
             {
-              text: "Experience certainty",
-              url: "https://example.com/erp-solutions",
-              contentKey: "erpSolutions",
-            },
-            {
-              text: "Why Leads2CRM",
-              url: "https://example.com/operations-management",
+              text: "About Leads2CRM",
+              url: "/about-us",
               contentKey: "operationsManagement",
-            },
-            {
-              text: "Heritage & Values",
-              url: "https://example.com/financial-management",
-              contentKey: "financialManagement",
-            },
-            {
-              text: "Corporate Sustainability",
-              url: "https://example.com/financial-management",
-              contentKey: "financialManagement",
-            },
-
-            {
-              text: "Our Leadership",
-              url: "https://example.com/financial-management",
-              contentKey: "financialManagement",
+              "icon": 'images/icon/header-icon/about.png'
             },
             {
               text: "Our Global Footprint",
               url: "https://example.com/financial-management",
               contentKey: "financialManagement",
+              "icon": 'images/icon/header-icon/global-footprint.png'
             },
+            // {
+            //   text: "Experience certainty",
+            //   url: "https://example.com/erp-solutions",
+            //   contentKey: "erpSolutions",
+            // },
 
+            // {
+            //   text: "Heritage & Values",
+            //   url: "https://example.com/financial-management",
+            //   contentKey: "financialManagement",
+            // },
+            // {
+            //   text: "Corporate Sustainability",
+            //   url: "https://example.com/financial-management",
+            //   contentKey: "financialManagement",
+            // },
+
+            // {
+            //   text: "Our Leadership",
+            //   url: "https://example.com/financial-management",
+            //   contentKey: "financialManagement",
+            // },
           ],
         },
       ],
@@ -793,7 +816,7 @@ const Header = () => {
                                 <h3 className="font-medium text-md text-mai font-sans mb-2">
                                   {menu.items[hoveredIndex].title}
                                 </h3>
-                                <hr className="border-t-2 border-[#808080] w-[70%] mt-2 mr-auto" />
+                                <hr className="border-t-2 border-mai w-[70%] mt-2 mr-auto" />
                               </div>
 
 
@@ -807,13 +830,13 @@ const Header = () => {
                           {hoveredIndex !== null && (
 
 
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-2 items-center gap-4">
                               {menu?.items[hoveredIndex]?.subtitle?.map((sub, idx) => (
-                                <div key={idx} className="flex items-center list-disc space-y-2 text-gray-700">
+                                <div key={idx} className="flex items-center list-disc p-2 px-2  hover:bg-mai hover:text-white rounded text-gray-700">
 
-                                  <img src={sub.icon} alt={sub.altText} className='mr-4 w-6 mt-2 items-center' />
+                                  <img src={sub.icon} alt={sub.altText} className='mr-4 w-6 items-center' />
                                   <li
-                                    className="text-sm font-medium text-gray-600 whitespace-nowrap"
+                                    className="text-sm font-medium items-center  hover:text-white text-gray-600 whitespace-nowrap"
                                     style={{ width: '100%', listStyleType: 'none' }}
                                     title={sub.altText} // Tooltip for hover
                                   >
@@ -838,7 +861,7 @@ const Header = () => {
                                       //     : "capitalize"
                                       // }`}
 
-                                      className={`hover:text-mai hover:underline hover:decoration-mai font-mono-system-ui ${["iPaaS", "jQuery", "React.js", "Next.js", "Vue.js", "Node.js", "Express.js", "iPaaS Integration Services"].includes(
+                                      className={`hover:underline items-center hover:text-white hover:decoration-gray-100 font-mono-system-ui ${["iPaaS", "jQuery", "React.js", "Next.js", "Vue.js", "Node.js", "Express.js", "iPaaS Integration Services"].includes(
                                         sub.text.trim()
                                       )
                                         ? "normal-case"
@@ -867,7 +890,7 @@ const Header = () => {
               ))}
               <li>
                 <a href="/contact-us">
-                  <button className="px-6 py-2 rounded-md transition-colors duration-300 bg-[#4763ad] text-white dark:bg-[#4763ad] dark:text-white  hover:bg-[#435fae] dark:hover:bg-[#435fae]">
+                  <button className="px-6 py-2 rounded-md transition-colors duration-300 bg-mai text-white dark:bg-mai dark:text-white  hover:bg-maihover dark:hover:bg-maihover">
                     Contact Us
                   </button>
                 </a>

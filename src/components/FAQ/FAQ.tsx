@@ -1,8 +1,6 @@
 // components/FAQ.jsx
 'use client'
 import { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const faqs = [
     {
@@ -45,15 +43,10 @@ const faqs = [
 
 export default function FAQ() {
     const [openIndex, setOpenIndex] = useState(null);
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: false,
-        });
-    }, []);
+
 
     return (
-        <section className="max-w-6xl md:mx-auto mx-4 p-6 my-10 rounded-xl px-6 bg-gradient-to-b from-[#b6aaff] via-[#c2c0ff] to-[#ffffff]">
+        <section id="faq" className="max-w-6xl md:mx-auto mx-4 p-6 my-10 rounded-xl px-6 bg-gradient-to-b from-mai to-[#0000ff43]">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-700">F.A.Q.</h2>
             <div className="divide-y divide-gray-300 border-gray-300 border-t border-b">
                 {faqs.map((faq, idx) => (
@@ -64,7 +57,7 @@ export default function FAQ() {
                             aria-expanded={openIndex === idx}
                             aria-controls={`faq-answer-${idx}`}
                         >
-                            <span className="hover:text-blue md:text-lg text-sm">{faq.question}</span>
+                            <span className="hover:text-gray-100 md:text-lg text-sm">{faq.question}</span>
                             <svg
                                 className={`w-5 h-5 ml-2 transform transition-transform duration-200 ${openIndex === idx ? "rotate-180" : ""
                                     }`}
@@ -79,7 +72,7 @@ export default function FAQ() {
                         <div
                             id={`faq-answer-${idx}`}
                             // data-aos="fade-up"
-                            className={`overflow-hidden transition-all pb-4 duration-300 text-gray-600 text-md ${openIndex === idx ? "max-h-40 py-2" : "max-h-0"
+                            className={`overflow-hidden transition-all pb-4 duration-300 text-gray-100 text-lg ${openIndex === idx ? "max-h-40 py-2" : "max-h-0"
                                 }`}
                             aria-hidden={openIndex !== idx}
                         >

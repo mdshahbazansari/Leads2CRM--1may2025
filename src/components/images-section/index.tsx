@@ -49,13 +49,14 @@ const FullScreenImage = () => {
             ensuring that we remain their trusted ally in achieving their goals.
           </p>
         </div>
-        <div className="md:gap-x-18 grid w-60  min-w-0 grid-cols-3 gap-x-12 gap-y-8 text-lg font-semibold text-[#8a95aa] md:w-2/5 holder">
+        <div className="md:gap-x-18 grid w-60  min-w-0 md:grid-cols-3 grid-cols-2  gap-x-12 gap-y-8 text-lg font-semibold text-[#8a95aa] md:w-2/5 holder">
           {customerImages.map((item, index) => (
             <div
               key={index}
               className="flex min-w-0 cursor-pointer items-center justify-center p-2"
             >
               <img
+                data-aos="fade-up"
                 src={item}
                 alt={`Customer ${index + 1}`}
                 className="transform transition-transform duration-300 hover:scale-150"

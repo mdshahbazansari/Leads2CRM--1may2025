@@ -80,6 +80,7 @@ import { useRouter } from 'next/navigation';
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import ContactUs from "@/app/contact-us/ContactUs"
+import Contact from "@/app/contact-us/Contact";
 
 
 
@@ -103,7 +104,7 @@ export default function Home() {
 
     <>
       <Head>
-        <title>Zoho with Maiprosoft</title>
+        <title>Zoho with Lead2CRM</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           rel="stylesheet"
@@ -122,7 +123,7 @@ export default function Home() {
             color: "#000000",
           }}
         >
-          <div className="p-4 lg:w-1/2">
+          <div className="p-4 space-y-10 lg:w-1/2">
             <div className="flex w-full justify-center">
               <Image
                 src="/images/zoho/ZOHO_logo_2023.svg.png"
@@ -132,33 +133,10 @@ export default function Home() {
                 className="mb-10"
               />
             </div>
-            {/* <Image
-      src="/images/zoho/ZOHO_logo_2023.svg.png"
-      alt="Zoho logo with colorful squares"
-      width={200}
-      height={200}
-      className="mb-4 mx-auto"
-      /> */}
-            {/* <h1 className="text-4xl font-bold mb-4 font-medium" style={{ fontFamily: 'Poppins', fontWeight: 450}}>
-      Unlock the full potential of Zoho with Maiprosoft
-    </h1> */}
 
-            {/* <h1 
-  className="text-4xl font-bold mb-4" 
-  style={{ fontFamily: 'Poppins', fontWeight: 500 }}
->
-  Unlock the full potential of Zoho with Maiprosoft
-</h1> */}
-
-            {/* <h1 
-  className="text-4xl font-bold mb-4" 
-  style={{ fontFamily: 'Poppins', fontWeight: 700 }}
->
-  Unlock the full potential of Zoho with Maiprosoft
-</h1> */}
 
             <h1 className="font-poppins text-4xl font-normal">
-              Unlock the full potential of Zoho with Maiprosoft,
+              Unlock the full potential of Zoho with Lead2CRM,
             </h1>
 
             {/* <p className="text-lg mb-6" style={{ fontFamily: 'Quicksand', fontWeight: 200 }}>
@@ -172,7 +150,7 @@ export default function Home() {
               management.
             </p>
             <button
-              className="hover:bg-blue-600 rounded bg-[#0078d4ff] px-6 py-3 text-white shadow"
+              className="hover:bg-maihover bg-mai px-6 py-3 text-white shadow"
               onClick={() => router.push(`/contact-us?source=${encodeURIComponent("Book a free Consultation")}`)}
             >
               Book a free Consultation
@@ -238,7 +216,7 @@ export default function Home() {
               Get Started Today!
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-center font-poppins font-normal lg:max-w-full">
-              Maiprosoft is a certified Zoho partner, offering expert
+              Lead2CRM is a certified Zoho partner, offering expert
               customization, implementation, and deployment services to help
               businesses like yours get the most out of Zoho&#39;s suite of
               productivity applications.
@@ -340,7 +318,7 @@ export default function Home() {
                 <a
                   href="https://go.zoho.com/QGR"
                   target="_blank"
-                  className="hover:bg-blue-700 rounded-sm bg-[#ee0014] px-6 py-3 font-semibold text-white transition"
+                  className="hover:bg-blue-700 bg-[#ee0014] px-6 py-3 font-semibold text-white transition"
                 >
                   Get Started For Free
                 </a>
@@ -380,7 +358,7 @@ export default function Home() {
                     title: "CRM",
                     desc: "Comprehensive CRM platform for customer-facing teams.",
                     hrefimg: "https://www.zohowebstatic.com/sites/zweb/images/productlogos/crm.svg",
-                    href: "https://go.zoho.com/IId",
+                    href: "/zoho-crm",
 
                   },
                   {
@@ -484,7 +462,7 @@ export default function Home() {
                   href="https://go.zoho.com/QGR"
                   type="button"
                   target="_blank"
-                  className="flex items-center gap-2 rounded-sm bg-[#e60028] px-6 py-3 text-sm font-semibold uppercase text-white transition hover:bg-[#b80020]"
+                  className="flex items-center gap-2  bg-[#e60028] px-6 py-3 text-sm font-semibold uppercase text-white transition hover:bg-[#b80020]"
                 >
                   Try Zoho One
                   <svg
@@ -845,6 +823,7 @@ export default function Home() {
             </div>
           </div> */}
         <ContactUs />
+        <Contact />
         {/* </section> */}
       </main>
     </>
