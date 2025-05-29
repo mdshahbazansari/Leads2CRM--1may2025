@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { db } from "@/lib/firebase";
 import { collection, addDoc } from "firebase/firestore";
+import FAQ from "@/components/FAQ/FAQ";
 
 type FormState = {
   name: string;
@@ -107,176 +108,180 @@ const ContactUs = () => {
   };
 
   return (
-    <div
-      id="contactUs"
-      className="min-h-screen mt-10 flex items-center justify-center bg-gradient-to-b from-mai via-[#d6eaff]  to-[#ffffff] px-2 py-16"
-    >
-      <div className="w-full max-w-6xl rounded-2xl bg-gradient-to-b from-[#ffffff]  to-[#ffffff84] relative md:p-8 overflow-hidden">
-        {/* Browser bar mock */}
-        <div className="flex items-center px-6 pt-6 pb-4">
-          <div className="w-16 h-5 bg-mai rounded-full mr-auto"></div>
-          <div className="flex gap-2 ml-auto">
-            <div className="w-6 h-2 rounded-full bg-mai"></div>
-            <div className="w-6 h-2 rounded-full bg-mai"></div>
-            <div className="w-6 h-2 rounded-full bg-mai"></div>
+    <>
+      <div
+        id="contactUs"
+        className="min-h-screen mt-10 flex items-center justify-center bg-gradient-to-b from-mai via-[#d6eaff]  to-[#ffffff] px-2 py-16"
+      >
+        <div className="w-full max-w-6xl rounded-2xl bg-gradient-to-b from-[#ffffff]  to-[#ffffff84] relative md:p-8 overflow-hidden">
+          {/* Browser bar mock */}
+          <div className="flex items-center px-6 pt-6 pb-4">
+            <div className="w-16 h-5 bg-mai rounded-full mr-auto"></div>
+            <div className="flex gap-2 ml-auto">
+              <div className="w-6 h-2 rounded-full bg-mai"></div>
+              <div className="w-6 h-2 rounded-full bg-mai"></div>
+              <div className="w-6 h-2 rounded-full bg-mai"></div>
+            </div>
           </div>
-        </div>
-        {/* Main form */}
-        <form
-          className="px-8 pb-8 pt-2 flex flex-col justify-center md:flex-row gap-8"
-          onSubmit={handleSubmit}
-          noValidate
-        >
-          {/* Left: Heading and labels */}
-          <div className="flex-1 flex flex-col text-gray-700 pr-0 space-y-4 md:pr-8">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-4">YOUR SUCCESS STORY STARTS HERE!</h2>
-            <p className="mb-6 text-lg font-light">
-              Were ready to turn your vision into reality with these key services:
-            </p>
-            <ul className="space-y-10 text-lg">
-              <li className="flex items-start gap-4">
-                <img src="/images/icon/contactsvg/mobile.png" alt="" className="bg-mai rounded-full p-1" />
-                <span>
-                  <span className="font-bold">Mobile App Development:</span> Intuitive, user-friendly apps your customers will love
-                </span>
-              </li>
-              <li className="flex items-start gap-4">
-                <img src="/images/icon/contactsvg/devops-cloud.png" alt="" className="bg-mai rounded-full p-1" />
-                <span>
-                  <span className="font-bold">Cutting-Edge Technology:</span> Leverage AI, ML, and more to stay ahead of the competition.
-                </span>
-              </li>
-              <li className="flex items-start gap-4">
-                <img src="/images/icon/contactsvg/team.png" alt="" className="bg-mai rounded-full p-1" />
-                <span>
-                  <span className="font-bold">Dedicated Team:</span> Our experts seamlessly integrate with your team for fast, quality results
-                </span>
-              </li>
-            </ul>
-          </div>
-          {/* Right: Inputs */}
-          <div className="flex-1 flex flex-col gap-4 justify-center">
-            <h2 className="text-2xl md:text-4xl font-bold text-gray-700 mb-6 tracking-widest">
-              GET IN TOUCH
-            </h2>
-            <div>
-              <label className="sr-only" htmlFor="name">Name</label>
-              <input
-                id="name"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="Name"
-                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
-                required
-              />
-              {triedSubmit && errors.name && (
-                <div className="text-red-600 text-xs mt-1">{errors.name}</div>
-              )}
+          {/* Main form */}
+          <form
+            className="px-8 pb-8 pt-2 flex flex-col justify-center md:flex-row gap-8"
+            onSubmit={handleSubmit}
+            noValidate
+          >
+            {/* Left: Heading and labels */}
+            <div className="flex-1 flex flex-col text-gray-700 pr-0 space-y-4 md:pr-8">
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-4">YOUR SUCCESS STORY STARTS HERE!</h2>
+              <p className="mb-6 text-lg font-light">
+                Were ready to turn your vision into reality with these key services:
+              </p>
+              <ul className="space-y-10 text-lg">
+                <li className="flex items-start gap-4">
+                  <img src="/images/icon/contactsvg/mobile.png" alt="" className="bg-mai rounded-full p-1" />
+                  <span>
+                    <span className="font-bold">Mobile App Development:</span> Intuitive, user-friendly apps your customers will love
+                  </span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <img src="/images/icon/contactsvg/devops-cloud.png" alt="" className="bg-mai rounded-full p-1" />
+                  <span>
+                    <span className="font-bold">Cutting-Edge Technology:</span> Leverage AI, ML, and more to stay ahead of the competition.
+                  </span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <img src="/images/icon/contactsvg/team.png" alt="" className="bg-mai rounded-full p-1" />
+                  <span>
+                    <span className="font-bold">Dedicated Team:</span> Our experts seamlessly integrate with your team for fast, quality results
+                  </span>
+                </li>
+              </ul>
             </div>
-            <div>
-              <label className="sr-only" htmlFor="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="Email"
-                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
-                required
-              />
-              {triedSubmit && errors.email && (
-                <div className="text-red-600 text-xs mt-1">{errors.email}</div>
-              )}
-            </div>
-            <div>
-              <label className="sr-only" htmlFor="phone">Phone</label>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                value={form.phone}
-                onChange={handleChange}
-                placeholder="Phone"
-                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
-                required
-              />
-              {triedSubmit && errors.phone && (
-                <div className="text-red-600 text-xs mt-1">{errors.phone}</div>
-              )}
-            </div>
-            <div>
-              <label className="sr-only" htmlFor="service">Service</label>
-              <select
-                id="service"
-                name="service"
-                value={form.service}
-                onChange={handleChange}
-                required
-                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-1 py-2 text-lg focus:outline-none focus:border-black transition"
-              >
-                <option value="">Select a service</option>
-                <option value="zoho crm">Zoho CRM</option>
-                <option value="zoho one">Zoho One</option>
-                <option value="app development">App Development</option>
-                <option value="web development">Web Development</option>
-                <option value="other">Other</option>
-              </select>
-              {triedSubmit && errors.service && (
-                <div className="text-red-600 text-xs mt-1">{errors.service}</div>
-              )}
-            </div>
-            {showOtherInput && (
+            {/* Right: Inputs */}
+            <div className="flex-1 flex flex-col gap-4 justify-center">
+              <h2 className="text-2xl md:text-4xl font-bold text-gray-700 mb-6 tracking-widest">
+                GET IN TOUCH
+              </h2>
               <div>
-                <label className="sr-only" htmlFor="otherService">Other Service</label>
+                <label className="sr-only" htmlFor="name">Name</label>
                 <input
-                  id="otherService"
-                  name="otherService"
-                  value={form.otherService}
+                  id="name"
+                  name="name"
+                  value={form.name}
                   onChange={handleChange}
-                  placeholder="Please specify your service"
+                  placeholder="Name"
                   className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                  required
                 />
-                {triedSubmit && errors.otherService && (
-                  <div className="text-red-600 text-xs mt-1">{errors.otherService}</div>
+                {triedSubmit && errors.name && (
+                  <div className="text-red-600 text-xs mt-1">{errors.name}</div>
                 )}
               </div>
-            )}
-            <div>
-              <label className="sr-only" htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                placeholder="Message"
-                rows={3}
-                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition resize-none"
-                required
-              />
-              {triedSubmit && errors.message && (
-                <div className="text-red-600 text-xs mt-1">{errors.message}</div>
+              <div>
+                <label className="sr-only" htmlFor="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="Email"
+                  className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                  required
+                />
+                {triedSubmit && errors.email && (
+                  <div className="text-red-600 text-xs mt-1">{errors.email}</div>
+                )}
+              </div>
+              <div>
+                <label className="sr-only" htmlFor="phone">Phone</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value={form.phone}
+                  onChange={handleChange}
+                  placeholder="Phone"
+                  className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                  required
+                />
+                {triedSubmit && errors.phone && (
+                  <div className="text-red-600 text-xs mt-1">{errors.phone}</div>
+                )}
+              </div>
+              <div>
+                <label className="sr-only" htmlFor="service">Service</label>
+                <select
+                  id="service"
+                  name="service"
+                  value={form.service}
+                  onChange={handleChange}
+                  required
+                  className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-1 py-2 text-lg focus:outline-none focus:border-black transition"
+                >
+                  <option value="">Select a service</option>
+                  <option value="zoho crm">Zoho CRM</option>
+                  <option value="zoho one">Zoho One</option>
+                  <option value="zoho one">Zoho Creator</option>
+                  <option value="app development">App Development</option>
+                  <option value="web development">Web Development</option>
+                  <option value="other">Other</option>
+                </select>
+                {triedSubmit && errors.service && (
+                  <div className="text-red-600 text-xs mt-1">{errors.service}</div>
+                )}
+              </div>
+              {showOtherInput && (
+                <div>
+                  <label className="sr-only" htmlFor="otherService">Other Service</label>
+                  <input
+                    id="otherService"
+                    name="otherService"
+                    value={form.otherService}
+                    onChange={handleChange}
+                    placeholder="Please specify your service"
+                    className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                  />
+                  {triedSubmit && errors.otherService && (
+                    <div className="text-red-600 text-xs mt-1">{errors.otherService}</div>
+                  )}
+                </div>
+              )}
+              <div>
+                <label className="sr-only" htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="Message"
+                  rows={3}
+                  className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition resize-none"
+                  required
+                />
+                {triedSubmit && errors.message && (
+                  <div className="text-red-600 text-xs mt-1">{errors.message}</div>
+                )}
+              </div>
+              <input type="hidden" name="source" value={form.source} />
+              <button
+                type="submit"
+                className="bg-mai text-white  px-6 py-2 mt-0 shadow hover:bg-maihover transition"
+                disabled={loading}
+              >
+                {loading ? "Sending..." : "Send message"}
+              </button>
+              {submitted && (
+                <div className="bg-teal-600 px-2 py-4 text-white rounded shadow text-center font-semibold mt-2">
+                  Thank you for contacting us!<br />
+                  We have received your message and will get back to you soon.
+                </div>
               )}
             </div>
-            <input type="hidden" name="source" value={form.source} />
-            <button
-              type="submit"
-              className="bg-mai text-white  px-6 py-2 mt-0 shadow hover:bg-maihover transition"
-              disabled={loading}
-            >
-              {loading ? "Sending..." : "Send message"}
-            </button>
-            {submitted && (
-              <div className="bg-teal-600 px-2 py-4 text-white rounded shadow text-center font-semibold mt-2">
-                Thank you for contacting us!<br />
-                We have received your message and will get back to you soon.
-              </div>
-            )}
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
+      <FAQ />
+    </>
   );
 };
 

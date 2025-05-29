@@ -10,6 +10,7 @@ import DeskHeroSignup from "./DeskHeroSignup"
 import ContactUs from "@/app/contact-us/ContactUs"
 import ZohoEcosystemAnimated from "./ZohoEcosystemAnimated"
 import EstimateProjectBanner from "@/components/EstimateProjectBanner/EstimateProjectBanner"
+import InteriorDesignCRMHero from "./InteriorDesignCRMHero"
 
 
 const page = () => {
@@ -19,6 +20,7 @@ const page = () => {
             <ZohoCrmHero />
             {/* <DeskHeroSignup /> */}
             <ZohoBanner />
+            <InteriorDesignCRMHero />
             {/* <EstimateProjectBanner /> */}
             <ZohoCRMIndustry />
             <ZohoCreatorCustomApp />

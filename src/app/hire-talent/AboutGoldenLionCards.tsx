@@ -5,7 +5,7 @@ import { HeartHandshakeIcon, Users2Icon } from 'lucide-react';
 const cards = [
     {
         icon: <span className="bg-[#f7e4e1] rounded-xl p-4 text-2xl font-bold text-[#e27e6a]">G</span>,
-        title: "About GoldenLion",
+        title: "About Lead2CRM",
         desc: "Who we are and what we do? Let's get to know each other better!",
         href: "#",
         color: "text-[#e27e6a]",

@@ -27,6 +27,7 @@ const servicesList = [
     { value: "", label: "Select a service" },
     { value: "zoho crm", label: "Zoho CRM" },
     { value: "zoho one", label: "Zoho One" },
+    { value: "zoho creator", label: "Zoho Creator" },
     { value: "app development", label: "App Development" },
     { value: "web development", label: "Web Development" },
     { value: "other", label: "Other" },

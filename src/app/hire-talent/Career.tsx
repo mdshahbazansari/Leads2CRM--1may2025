@@ -9,7 +9,7 @@ export default function CareersHero() {
                 <div className="flex-1 flex flex-col justify-center pl-10 pr-4 py-12">
                     <h1 className="text-6xl font-extrabold text-[#171717] mb-6 leading-tight">Careers</h1>
                     <p className="text-[#171717] text-lg mb-8 max-w-lg">
-                        If you are looking for a job where you learn something new each day and getting bored is out of the question, then GoldenLion is the perfect place for you. If you fit the bill, scroll down and see the openings we presently have!
+                        If you are looking for a job where you learn something new each day and getting bored is out of the question, then Lead2CRM is the perfect place for you. If you fit the bill, scroll down and see the openings we presently have!
                     </p>
                     <a href="#jobopening">
                         <button className="bg-mai hover:bg-maihover text-white font-semibold px-8 py-3  shadow transition text-lg mt-2"
