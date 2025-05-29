@@ -25,7 +25,7 @@ export default function ZiaHero() {
             </a>
             {/* Screenshot/Browser Frame */}
             <div data-aos="fade-up" className="w-full flex justify-center ">
-                <div className="rounded-xl border-4 border-mai  overflow-hidden w-11/12 md:w-7/12 shadow-2xl shadow-rose-200">
+                <div className="rounded-xl border-4 border-mai  overflow-hidden w-11/12 md:w-7/12 shadow-2xl shadow-gray-400">
 
                     <div className="flex flex-col items-center justify-center bg-white ">
                         <video
