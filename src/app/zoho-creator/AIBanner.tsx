@@ -3,7 +3,7 @@
 export default function AIBannerExact() {
     return (
         <section className="w-full hidden md:block  justify-center items-center py-8 px-2">
-            <div className="w-full max-w-7xl rounded-xl bg-[#120b4b] flex flex-col md:flex-row items-center justify-between px-10 py-10 shadow-lg gap-8 md:gap-0">
+            <div className="w-full max-w-7xl mx-auto rounded-xl bg-[#120b4b] flex flex-col md:flex-row items-center justify-between px-10 py-10 shadow-lg gap-8 md:gap-0">
                 {/* Left: Icon and headline */}
                 <div className="flex items-center gap-8 w-full md:w-auto justify-center md:justify-start">
                     {/* Glowing icon */}
@@ -30,7 +30,7 @@ export default function AIBannerExact() {
                     </h2>
                 </div>
                 {/* Right: Button */}
-                <div className="w-full md:w-auto flex justify-center md:justify-end mt-8 md:mt-0">
+                <div data-aos="fade-left" className="w-full md:w-auto flex justify-center md:justify-end mt-8 md:mt-0">
                     <a href="/zoho-creator" className="relative group">
                         <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-[#7b7bff] to-[#7be0ff] opacity-70 blur-[8px] group-hover:opacity-90 transition" style={{ zIndex: 1 }} />
                         <button

@@ -13,7 +13,7 @@ const cards = [
     {
         icon: <Users2Icon className="w-10 h-10 bg-[#e6e7fa] rounded-xl p-2 text-[#6c63ff]" />,
         title: "Team",
-        desc: "A business is as good as its team! We’ve got the best one out there!",
+        desc: "A business is as good as its team! We've got the best one out there!",
         href: "#",
         color: "text-[#6c63ff]",
     },

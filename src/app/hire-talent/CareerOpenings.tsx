@@ -16,7 +16,7 @@ const jobs = [
         vacancies: 2,
         experience: "3 - 7 Years Experience",
         description:
-            "We are seeking a skilled Zoho CRM Business Development Consultant to join the Business Solutions Division at GoldenLion. This division specializes in empowering customers through business process automation solutions designed...",
+            "We are seeking a skilled Zoho CRM Business Development Consultant to join the Business Solutions Division at Lead2CRM. This division specializes in empowering customers through business process automation solutions designed...",
         color: "bg-[#eaf2f8]",
         btn: "border-[#222] text-[#222] hover:bg-[#eaf2f8]",
     },
@@ -35,7 +35,7 @@ const jobs = [
         vacancies: 2,
         experience: "2 - 5 Years Experience",
         description:
-            "We are looking for the right candidate for the position of Zoho CRM Implementation Consultant for the business solutions division at GoldenLion. The business solutions division is responsible for helping...",
+            "We are looking for the right candidate for the position of Zoho CRM Implementation Consultant for the business solutions division at Lead2CRM. The business solutions division is responsible for helping...",
         color: "bg-[#fff8e1]",
         btn: "border-[#222] text-[#222] hover:bg-[#fff8e1]",
     },
@@ -158,21 +158,21 @@ export default function CareerOpenings() {
             <div className="text-center mb-8 space-y-10">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-gray-700 mb-2">We are Super Excited to Have You Onboard</h2>
                 <p className="text-gray-600 text-center max-w-4xl text-lg mx-auto">
-                    We are looking for talented people like you who want to help our 700+ customers around the world use GoldenLion services to transform their business. GoldenLion not only provides you with the rewarding career development you are seeking but also with unmatched benefits that help you get the most out of your career and your life.
+                    We are looking for talented people like you who want to help our 700+ customers around the world use Lead2CRM services to transform their business. Lead2CRM not only provides you with the rewarding career development you are seeking but also with unmatched benefits that help you get the most out of your career and your life.
                 </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {jobs.map((job, idx) => (
                     <div
                         key={job.title}
-                        className={`rounded-2xl ${job.color} p-6 shadow flex flex-col h-full`} // h-full ensures equal height in grid
+                        className={`rounded-xl ${job.color} p-4 shadow flex flex-col h-full`} // h-full ensures equal height in grid
                     // style={{ minHeight: 340 }} // optional: set a min height for visual consistency
                     >
                         {/* Card Content */}
                         <div className=''>
-                            <div className="flex items-center gap-3 mb-2">
+                            <div className="flex items-center gap-2 mb-2">
                                 {job.icon}
-                                <h3 className="text-xl text-gray-700 font-bold">{job.title}</h3>
+                                <h3 className="md:text-xl text-md text-gray-700 font-bold">{job.title}</h3>
                             </div>
                             <div className="flex flex-wrap gap-4 text-sm text-[#222] font-medium my-4">
                                 <span className="flex items-center gap-1"><MapPinIcon className="w-4 h-4" /> {job.location}</span>
@@ -180,11 +180,11 @@ export default function CareerOpenings() {
                                 <span className="flex items-center gap-1"><UserGroupIcon className="w-4 h-4" /> {job.vacancies} Vacancies</span>
                                 <span className="flex items-center gap-1"><ClockIcon className="w-4 h-4" /> {job.experience}</span>
                             </div>
-                            <p className="text-[#222] text-base my-4">{job.description}</p>
+                            <p className="text-[#222] text-xs md:text-base my-4">{job.description}</p>
                         </div>
                         {/* Button always at bottom */}
                         <div className="mt-auto flex">
-                            <button className={`px-5 py-2 rounded border transition font-semibold ${job.btn}`}>
+                            <button className={`px-5 py-2  border transition font-semibold ${job.btn}`}>
                                 Read more
                             </button>
                         </div>

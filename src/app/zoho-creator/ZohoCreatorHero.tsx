@@ -177,7 +177,7 @@ export default function ZohoCreatorHero() {
                     </div>
                 </div>
             </div>
-            <div className="md:my-20 my-10 rounded-lg shadow-2xl shadow-red-200  border-4 border-black w-11/12 md:w-9/12 mx-auto ">
+            <div data-aos="fade-up" className="md:my-20 my-10 rounded-lg shadow-2xl shadow-red-200  border-4 border-black w-11/12 md:w-9/12 mx-auto ">
                 <video controls loop autoPlay src="/images/zoho/zoho-creator/powerful-ai-apps.mp4" className="rounded-lg"></video>
             </div>
         </section>
