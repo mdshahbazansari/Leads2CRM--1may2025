@@ -2,6 +2,7 @@ import AboutGoldenLionCards from "./AboutGoldenLionCards"
 import CareersHero from "./Career"
 import CareerOpenings from "./CareerOpenings"
 import HireReactSteps from "./HireReactSteps"
+import ContactUs from "@/app/contact-us/ContactUs"
 
 const page = () => {
     return (
@@ -10,6 +11,7 @@ const page = () => {
             <CareerOpenings />
             {/* <HireReactSteps /> */}
             <AboutGoldenLionCards />
+            <ContactUs />
         </div>
     )
 }

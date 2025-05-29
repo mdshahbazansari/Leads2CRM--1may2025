@@ -239,6 +239,13 @@ module.exports = {
             "background-position": "0% 50%",
           },
         },
+        "border-color-cycle": {
+          "0%": { borderColor: "#ffc16e" }, // blue-500
+          "25%": { borderColor: "#b9ff6e" }, // fuchsia-800
+          "50%": { borderColor: "#13ffed" }, // orange-400
+          "75%": { borderColor: "#d26bff" }, // cyan-400
+          "100%": { borderColor: "#ff7a7a" },
+        },
         textslide: {
           "0%": {
             transform: "translateY(100%)",
@@ -261,6 +268,8 @@ module.exports = {
         textslide: "textslide 9s ease-in-out infinite",
         "border-color-change": "borderColorChange 2s infinite",
         shine: "shine 5s linear infinite",
+        "spin-slow": "spin 2s linear infinite",
+        "border-color-cycle": "border-color-cycle 5s linear infinite",
       },
       boxShadow: {
         signUp: "0px 5px 10px rgba(4, 10, 34, 0.2)",

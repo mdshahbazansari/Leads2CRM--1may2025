@@ -150,6 +150,102 @@ const jobs = [
         color: "bg-[#f9fbe7]",
         btn: "border-[#222] text-[#222] hover:bg-[#f9fbe7]",
     },
+    {
+        title: "Frontend Developer",
+        icon: (
+            <span className="bg-white/60 rounded-full p-2">
+                <svg width="32" height="32" fill="none" stroke="#222" strokeWidth="2">
+                    <path d="M4 6h24v4H4zM4 14h24v4H4zM4 22h24v4H4z" />
+                </svg>
+            </span>
+        ),
+        location: "Remote",
+        type: "Full Time",
+        vacancies: 2,
+        experience: "2 - 4 Years Experience",
+        description:
+            "We're seeking a talented Frontend Developer with a strong grasp of modern JavaScript frameworks and responsive design skills.",
+        color: "bg-[#f0f4c3]",
+        btn: "border-[#222] text-[#222] hover:bg-[#f0f4c3]",
+    },
+
+    {
+        title: "Backend Developer",
+        icon: (
+            <span className="bg-white/60 rounded-full p-2">
+                <svg width="32" height="32" fill="none" stroke="#222" strokeWidth="2">
+                    <path d="M4 6h24v20H4zM8 10h16M8 16h16M8 22h10" />
+                </svg>
+            </span>
+        ),
+        location: "Bangalore",
+        type: "Full Time",
+        vacancies: 3,
+        experience: "3 - 6 Years Experience",
+        description:
+            "We're looking for an experienced Backend Developer to build scalable APIs and manage server-side logic using Node.js or similar technologies.",
+        color: "bg-[#fce4ec]",
+        btn: "border-[#222] text-[#222] hover:bg-[#fce4ec]",
+    },
+
+    {
+        title: "Database Developer",
+        icon: (
+            <span className="bg-white/60 rounded-full p-2">
+                <svg width="32" height="32" fill="none" stroke="#222" strokeWidth="2">
+                    <ellipse cx="16" cy="8" rx="10" ry="4" />
+                    <path d="M6 8v10c0 2 4.5 4 10 4s10-2 10-4V8" />
+                </svg>
+            </span>
+        ),
+        location: "Hyderabad",
+        type: "Full Time",
+        vacancies: 1,
+        experience: "4 - 7 Years Experience",
+        description:
+            "Hiring a skilled Database Developer to work on database architecture, optimization, and integration for enterprise-level applications.",
+        color: "bg-[#e3f2fd]",
+        btn: "border-[#222] text-[#222] hover:bg-[#e3f2fd]",
+    },
+
+    {
+        title: "React Node Developer",
+        icon: (
+            <span className="bg-white/60 rounded-full p-2">
+                <svg width="32" height="32" fill="none" stroke="#222" strokeWidth="2">
+                    <circle cx="16" cy="16" r="12" />
+                    <path d="M10 16h12M16 10v12" />
+                </svg>
+            </span>
+        ),
+        location: "Pune",
+        type: "Full Time",
+        vacancies: 2,
+        experience: "2 - 5 Years Experience",
+        description:
+            "We're looking for a full-stack developer proficient in React and Node.js to help build scalable web applications.",
+        color: "bg-[#ede7f6]",
+        btn: "border-[#222] text-[#222] hover:bg-[#ede7f6]",
+    },
+
+    {
+        title: "Cloud Engineer",
+        icon: (
+            <span className="bg-white/60 rounded-full p-2">
+                <svg width="32" height="32" fill="none" stroke="#222" strokeWidth="2">
+                    <path d="M20 17H8a4 4 0 1 1 0-8c.7 0 1.4.1 2 .4A5 5 0 1 1 20 17z" />
+                </svg>
+            </span>
+        ),
+        location: "Chennai",
+        type: "Full Time",
+        vacancies: 1,
+        experience: "3 - 6 Years Experience",
+        description:
+            "We are looking for an experienced Cloud Engineer to manage infrastructure and deployments across AWS and Azure platforms.",
+        color: "bg-[#e0f2f1]",
+        btn: "border-[#222] text-[#222] hover:bg-[#e0f2f1]",
+    },
 ];
 
 export default function CareerOpenings() {
@@ -164,6 +260,7 @@ export default function CareerOpenings() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {jobs.map((job, idx) => (
                     <div
+                        data-aos="fade-up"
                         key={job.title}
                         className={`rounded-xl ${job.color} p-4 shadow flex flex-col h-full`} // h-full ensures equal height in grid
                     // style={{ minHeight: 340 }} // optional: set a min height for visual consistency

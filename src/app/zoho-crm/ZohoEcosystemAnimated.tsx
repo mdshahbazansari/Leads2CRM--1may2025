@@ -24,7 +24,7 @@ export default function ZohoEcosystemAnimated() {
     }, []);
 
     return (
-        <section className="w-full max-w-6xl rounded-lg my-10 mx-auto flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-mai to-[#005fb8] px-2 md:px-6 py-8 md:py-20">
+        <section className="w-full max-w-7xl rounded-lg my-10 mx-auto flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-mai to-[#005fb8] px-2 md:px-6 py-8 md:py-20">
             <div className="w-full md:flex-1 flex flex-col  md:flex-row items-center justify-between gap-14">
                 {/* Mobile: 2-column grid, Desktop: original animated layout */}
                 <div className="w-full md:w-auto">

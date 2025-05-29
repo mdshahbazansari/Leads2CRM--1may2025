@@ -2,7 +2,7 @@
 
 export default function AIBannerExact() {
     return (
-        <section className="w-full hidden md:block  justify-center items-center py-8 px-2">
+        <section className="w-full   justify-center items-center py-8 px-2">
             <div className="w-full max-w-7xl mx-auto rounded-xl bg-[#120b4b] flex flex-col md:flex-row items-center justify-between px-10 py-10 shadow-lg gap-8 md:gap-0">
                 {/* Left: Icon and headline */}
                 <div className="flex items-center gap-8 w-full md:w-auto justify-center md:justify-start">
@@ -24,7 +24,7 @@ export default function AIBannerExact() {
                     <h2 className="text-2xl md:text-6xl font-extrabold text-white md:leading-tight">
                         Witness the{" "}
                         <span className="bg-gradient-to-r from-mai to-[#0535d4] text-transparent bg-clip-text">
-                            power of<br className="block md:hidden" /> app creation
+                            power of<br className="hidden md:block" /> app creation
                         </span>{" "}
                         with AI
                     </h2>
