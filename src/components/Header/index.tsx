@@ -33,6 +33,12 @@ const Header = () => {
               contentKey: "api",
               "icon": 'images/icon/header-icon/zohocrm.png'
             },
+            {
+              text: "Zoho-Creator",
+              url: "/zoho-creator",
+              contentKey: "api",
+              "icon": 'images/icon/header-icon/zoho-creator.png'
+            },
             // {
             //   text: "Zoho CRM",
             //   url: "/zoho-crm",
@@ -602,6 +608,23 @@ const Header = () => {
 
         }
       ]
+    },
+    {
+      menuName: "Hire Talent",
+      items: [
+        {
+          title: "Hire Talent",
+          icon: "/images/Maiprosoft-menu/hire-talent.png",
+          subtitle: [
+            {
+              text: "Hire Talent",
+              url: "/hire-talent",
+              contentKey: "erpSolutions",
+              "icon": '/images/Maiprosoft-menu/hire-talent.png'
+            },
+          ],
+        },
+      ],
     },
     {
       menuName: "About Us",

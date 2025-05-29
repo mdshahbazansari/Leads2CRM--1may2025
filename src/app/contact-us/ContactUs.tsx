@@ -111,7 +111,7 @@ const ContactUs = () => {
             id="contactUs"
             className="min-h-screen flex items-center justify-center bg-gradient-to-b from-mai via-[#d6eaff]  to-[#ffffff] px-2 py-16"
         >
-            <div className="w-full max-w-6xl rounded-2xl bg-gradient-to-b from-[#ffffff]  to-[#ffffff84] relative md:p-8 overflow-hidden">
+            <div className="w-full max-w-6xl rounded-2xl bg-gradient-to-b from-[#ffffff]  to-[#ffffff] relative md:p-8 overflow-hidden">
                 {/* Browser bar mock */}
                 <div className="flex items-center px-6 pt-6 pb-4">
                     <div className="w-16 h-5 bg-mai rounded-full mr-auto"></div>

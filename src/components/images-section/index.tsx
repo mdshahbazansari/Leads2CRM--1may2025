@@ -59,7 +59,7 @@ const FullScreenImage = () => {
                 data-aos="fade-up"
                 src={item}
                 alt={`Customer ${index + 1}`}
-                className="transform transition-transform duration-300 hover:scale-150"
+                className="block w-full h-auto transform transition-transform duration-300 hover:scale-150"
               />
             </div>
           ))}
