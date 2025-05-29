@@ -5,6 +5,7 @@ import CentersOfExcellence from './CentersOfExcellence'
 import OurEssense from './OurEssense'
 import JoinUsSection from './JoinUsSection'
 import ExploreMoreSection from './ExploreMoreSection'
+import EmpowersStaff from './EmpowersStaff'
 
 const page = () => {
     return (
@@ -12,8 +13,9 @@ const page = () => {
             <AboutCompanyHero />
             <CentersOfExcellence />
             <OurEssense />
-            <JoinUsSection />
             <ExploreMoreSection />
+            <EmpowersStaff />
+            <JoinUsSection />
         </div>
     )
 }

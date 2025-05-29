@@ -82,7 +82,7 @@ export default function ZohoCreatorHero() {
     };
 
     return (
-        <section className="bg-gradient-to-b from-mai via-sky-100 to-[#ffffff] min-h-screen mt-10 py-12 px-2">
+        <section id="zoho-creator" className="bg-gradient-to-b from-mai via-sky-100 to-[#ffffff] min-h-screen mt-10 py-12 px-2">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row px-6 items-center gap-4">
                 {/* Left: Content */}
                 <div className="flex-1 mt-10">

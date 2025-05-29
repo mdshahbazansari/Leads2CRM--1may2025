@@ -1,8 +1,13 @@
+'use client'
 import React from 'react'
 import ZohoCreatorHero from './ZohoCreatorHero'
 import ZiaHero from './ZiaHero'
 import AIBanner from './AIBanner'
 import ContactUs from '../contact-us/ContactUs'
+import JoinUsSection from '../about-us/JoinUsSection'
+import FAQSection from './FAQSection'
+import AppIntegrationHero from './AppIntegrationHero'
+import AutomateBusinessProcesses from './AutomateBusinessProcesses'
 
 const page = () => {
     return (
@@ -10,7 +15,11 @@ const page = () => {
             <ZohoCreatorHero />
             <ZiaHero />
             <AIBanner />
-            <ContactUs/>
+            <AppIntegrationHero />
+            <AutomateBusinessProcesses />
+            {/* <JoinUsSection /> */}
+            <FAQSection />
+            <ContactUs />
         </div>
     )
 }
