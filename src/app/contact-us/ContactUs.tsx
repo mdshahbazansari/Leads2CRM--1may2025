@@ -23,14 +23,18 @@ type ErrorState = {
     message?: string;
 };
 
-const ContactUs = () => {
-    const pathname = usePathname();
-    useEffect(() => {
-        // AOS or any animation init here if needed
-    }, []);
+const servicesList = [
+    { value: "", label: "Select a service" },
+    { value: "zoho crm", label: "Zoho CRM" },
+    { value: "zoho one", label: "Zoho One" },
+    { value: "app development", label: "App Development" },
+    { value: "web development", label: "Web Development" },
+    { value: "other", label: "Other" },
+];
 
+export default function ContactUs() {
+    const pathname = usePathname();
     const searchParams = useSearchParams();
-    const source = searchParams.get('source') || '';
     const service = searchParams.get('service') || '';
 
     const [form, setForm] = useState<FormState>({
@@ -109,45 +113,37 @@ const ContactUs = () => {
     return (
         <div
             id="contactUs"
-            className="min-h-screen flex items-center justify-center bg-gradient-to-b from-mai via-[#d6eaff]  to-[#ffffff] px-2 py-16"
+            className="min-h-screen flex items-center justify-center bg-gradient-to-b from-mai via-[#d6eaff] to-[#ffffff] px-2 py-10"
         >
-            <div className="w-full max-w-6xl rounded-2xl bg-gradient-to-b from-[#ffffff]  to-[#ffffff] relative md:p-8 overflow-hidden">
-                {/* Browser bar mock */}
-                <div className="flex items-center px-6 pt-6 pb-4">
-                    <div className="w-16 h-5 bg-mai rounded-full mr-auto"></div>
-                    <div className="flex gap-2 ml-auto">
-                        <div className="w-6 h-2 rounded-full bg-mai"></div>
-                        <div className="w-6 h-2 rounded-full bg-mai"></div>
-                        <div className="w-6 h-2 rounded-full bg-mai"></div>
-                    </div>
-                </div>
-                {/* Main form */}
+            <div className="w-full max-w-6xl rounded-2xl bg-gradient-to-b from-[#ffffff] to-[#ffffff84] relative md:p-8 overflow-hidden">
                 <form
-                    className="px-8 pb-8 pt-2 flex flex-col justify-center md:flex-row gap-8"
+                    className="px-4 sm:px-8 pb-8 pt-2 flex flex-col justify-center md:flex-row gap-8"
                     onSubmit={handleSubmit}
                     noValidate
                 >
                     {/* Left: Heading and labels */}
                     <div className="flex-1 flex flex-col text-gray-700 pr-0 space-y-4 md:pr-8">
-                        <h2 className="text-3xl md:text-4xl font-extrabold mb-4">YOUR SUCCESS STORY STARTS HERE!</h2>
-                        <p className="mb-6 text-lg font-light">
-                            Were ready to turn your vision into reality with these key services:
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
+                            YOUR SUCCESS STORY STARTS HERE!
+                        </h2>
+                        <p className="mb-6 text-base sm:text-lg md:text-xl font-light leading-relaxed">
+                            We’re ready to turn your vision into reality with these key services:
                         </p>
-                        <ul className="space-y-10 text-lg">
+                        <ul className="space-y-8 text-sm sm:text-base md:text-lg">
                             <li className="flex items-start gap-4">
-                                <img src="/images/icon/contactsvg/mobile.png" alt="" className="bg-mai rounded-full p-1" />
+                                <img src="/images/icon/contactsvg/mobile.png" alt="" className="bg-mai rounded-full p-1 w-8 h-8" />
                                 <span>
                                     <span className="font-bold">Mobile App Development:</span> Intuitive, user-friendly apps your customers will love
                                 </span>
                             </li>
                             <li className="flex items-start gap-4">
-                                <img src="/images/icon/contactsvg/devops-cloud.png" alt="" className="bg-mai rounded-full p-1" />
+                                <img src="/images/icon/contactsvg/devops-cloud.png" alt="" className="bg-mai rounded-full p-1 w-8 h-8" />
                                 <span>
                                     <span className="font-bold">Cutting-Edge Technology:</span> Leverage AI, ML, and more to stay ahead of the competition.
                                 </span>
                             </li>
                             <li className="flex items-start gap-4">
-                                <img src="/images/icon/contactsvg/team.png" alt="" className="bg-mai rounded-full p-1" />
+                                <img src="/images/icon/contactsvg/team.png" alt="" className="bg-mai rounded-full p-1 w-8 h-8" />
                                 <span>
                                     <span className="font-bold">Dedicated Team:</span> Our experts seamlessly integrate with your team for fast, quality results
                                 </span>
@@ -156,26 +152,24 @@ const ContactUs = () => {
                     </div>
                     {/* Right: Inputs */}
                     <div className="flex-1 flex flex-col gap-4 justify-center">
-                        <h2 className="text-2xl md:text-4xl font-bold text-gray-700 mb-6 tracking-widest">
+                        <h2 className="text-lg sm:text-2xl md:text-4xl font-bold text-gray-700 mb-6 tracking-widest">
                             GET IN TOUCH
                         </h2>
                         <div>
-                            <label className="sr-only" htmlFor="name">Name</label>
                             <input
                                 id="name"
                                 name="name"
                                 value={form.name}
                                 onChange={handleChange}
                                 placeholder="Name"
-                                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-base sm:text-lg focus:outline-none focus:border-black transition"
                                 required
                             />
                             {triedSubmit && errors.name && (
-                                <div className="text-red-600 text-xs mt-1">{errors.name}</div>
+                                <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.name}</div>
                             )}
                         </div>
                         <div>
-                            <label className="sr-only" htmlFor="email">Email</label>
                             <input
                                 id="email"
                                 name="email"
@@ -183,15 +177,14 @@ const ContactUs = () => {
                                 value={form.email}
                                 onChange={handleChange}
                                 placeholder="Email"
-                                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-base sm:text-lg focus:outline-none focus:border-black transition"
                                 required
                             />
                             {triedSubmit && errors.email && (
-                                <div className="text-red-600 text-xs mt-1">{errors.email}</div>
+                                <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.email}</div>
                             )}
                         </div>
                         <div>
-                            <label className="sr-only" htmlFor="phone">Phone</label>
                             <input
                                 id="phone"
                                 name="phone"
@@ -199,52 +192,46 @@ const ContactUs = () => {
                                 value={form.phone}
                                 onChange={handleChange}
                                 placeholder="Phone"
-                                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-base sm:text-lg focus:outline-none focus:border-black transition"
                                 required
                             />
                             {triedSubmit && errors.phone && (
-                                <div className="text-red-600 text-xs mt-1">{errors.phone}</div>
+                                <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.phone}</div>
                             )}
                         </div>
                         <div>
-                            <label className="sr-only" htmlFor="service">Service</label>
                             <select
                                 id="service"
                                 name="service"
                                 value={form.service}
                                 onChange={handleChange}
                                 required
-                                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-1 py-2 text-lg focus:outline-none focus:border-black transition"
+                                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-1 py-2 text-base sm:text-lg focus:outline-none focus:border-black transition"
                             >
-                                <option value="">Select a service</option>
-                                <option value="zoho crm">Zoho CRM</option>
-                                <option value="zoho one">Zoho One</option>
-                                <option value="app development">App Development</option>
-                                <option value="web development">Web Development</option>
-                                <option value="other">Other</option>
+                                {servicesList.map((item) => (
+                                    <option key={item.value} value={item.value}>{item.label}</option>
+                                ))}
                             </select>
                             {triedSubmit && errors.service && (
-                                <div className="text-red-600 text-xs mt-1">{errors.service}</div>
+                                <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.service}</div>
                             )}
                         </div>
                         {showOtherInput && (
                             <div>
-                                <label className="sr-only" htmlFor="otherService">Other Service</label>
                                 <input
                                     id="otherService"
                                     name="otherService"
                                     value={form.otherService}
                                     onChange={handleChange}
                                     placeholder="Please specify your service"
-                                    className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
+                                    className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-base sm:text-lg focus:outline-none focus:border-black transition"
                                 />
                                 {triedSubmit && errors.otherService && (
-                                    <div className="text-red-600 text-xs mt-1">{errors.otherService}</div>
+                                    <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.otherService}</div>
                                 )}
                             </div>
                         )}
                         <div>
-                            <label className="sr-only" htmlFor="message">Message</label>
                             <textarea
                                 id="message"
                                 name="message"
@@ -252,17 +239,17 @@ const ContactUs = () => {
                                 onChange={handleChange}
                                 placeholder="Message"
                                 rows={3}
-                                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition resize-none"
+                                className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-base sm:text-lg focus:outline-none focus:border-black transition resize-none"
                                 required
                             />
                             {triedSubmit && errors.message && (
-                                <div className="text-red-600 text-xs mt-1">{errors.message}</div>
+                                <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.message}</div>
                             )}
                         </div>
                         <input type="hidden" name="source" value={form.source} />
                         <button
                             type="submit"
-                            className="bg-mai text-white  px-6 py-2 mt-0 shadow hover:bg-maihover transition"
+                            className="bg-mai text-white px-5 sm:px-6 py-2 mt-0 shadow hover:bg-maihover transition text-base sm:text-lg rounded"
                             disabled={loading}
                         >
                             {loading ? "Sending..." : "Send message"}
@@ -278,6 +265,4 @@ const ContactUs = () => {
             </div>
         </div>
     );
-};
-
-export default ContactUs;
+}

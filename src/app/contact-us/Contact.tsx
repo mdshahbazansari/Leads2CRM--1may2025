@@ -144,7 +144,7 @@ const ContactUs = () => {
                             <div className="flex items-center border border-gray-200 rounded px-2 bg-gray-50">
                                 <span className="flex items-center pr-2">
                                     <img src="https://flagcdn.com/sa.svg" alt="SA" className="w-6 h-4 rounded" />
-                                    <span className="ml-1 text-gray-500">+1</span>
+                                    <span className="ml-1 text-gray-500">+96</span>
                                 </span>
                                 <input
                                     type="tel"

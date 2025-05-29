@@ -83,7 +83,7 @@ export default function ZohoCreatorHero() {
 
     return (
         <section className="bg-gradient-to-b from-mai via-sky-100 to-[#ffffff] min-h-screen mt-10 py-12 px-2">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row px-6 items-center gap-4">
                 {/* Left: Content */}
                 <div className="flex-1 mt-10">
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-[#1a1242] mb-10 leading-tight">
@@ -177,7 +177,7 @@ export default function ZohoCreatorHero() {
                     </div>
                 </div>
             </div>
-            <div className="my-20 rounded-lg shadow-2xl shadow-red-200  border-4 border-black w-9/12 mx-auto ">
+            <div className="md:my-20 my-10 rounded-lg shadow-2xl shadow-red-200  border-4 border-black w-11/12 md:w-9/12 mx-auto ">
                 <video controls loop autoPlay src="/images/zoho/zoho-creator/powerful-ai-apps.mp4" className="rounded-lg"></video>
             </div>
         </section>

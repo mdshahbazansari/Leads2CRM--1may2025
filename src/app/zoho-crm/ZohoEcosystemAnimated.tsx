@@ -2,126 +2,45 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-
-// Service data
-// const services = [
-//     {
-//         name: "Zoho SalesIQ",
-//         icon: "/images/zoho/zoho-crm/services-icons/salesIQ.png",
-//     },
-//     {
-//         name: "Zoho Analytics",
-//         icon: "/images/zoho/zoho-crm/services-icons/analytics.png",
-//     },
-//     {
-//         name: "Zoho Campaigns",
-//         icon: "/images/zoho/zoho-crm/services-icons/campaigns.webp",
-//     },
-//     {
-//         name: "Zoho Projects",
-//         icon: "/images/zoho/zoho-crm/services-icons/projects.png",
-//     },
-//     {
-//         name: "Zoho Desk",
-//         icon: "/images/zoho/zoho-crm/services-icons/desk.png",
-//     },
-//     {
-//         name: "Zoho Forms",
-//         icon: "/images/zoho/zoho-crm/services-icons/forms.png",
-//     },
-//     {
-//         name: "Zoho Mail",
-//         icon: "/images/zoho/zoho-crm/services-icons/mail.png",
-//     },
-//     {
-//         name: "Zoho Survey",
-//         icon: "/images/zoho/zoho-crm/services-icons/servey.webp",
-//     },
-// ];
-
-// // Keyframes for up animation (add to your global CSS or use a CSS-in-JS solution)
-// const style = `
-// @keyframes floatUp {
-//   0% { transform: translateY(40px); opacity: 0; }
-//   20% { opacity: 1; }
-//   80% { opacity: 1; }
-//   100% { transform: translateY(-40px); opacity: 0; }
-// }
-// `;
-// ZohoEcosystemStatic.jsx
-
-
 const services = [
-    {
-        name: "Zoho Survey",
-        icon: "/images/zoho/zoho-crm/services-icons/servey.webp",
-        style: "left-6 top-10",
-    },
-    {
-        name: "Zoho Desk",
-        icon: "/images/zoho/zoho-crm/services-icons/desk.png",
-        style: "left-0 top-44",
-    },
-    {
-        name: "Zoho Forms",
-        icon: "/images/zoho/zoho-crm/services-icons/forms.png",
-        style: "left-28 top-80",
-    },
-    {
-        name: "Zoho Mail",
-        icon: "/images/zoho/zoho-crm/services-icons/mail.png",
-        style: "left-1/3 -translate-x-1/2 top-40",
-    },
-    {
-        name: "Zoho Projects",
-        icon: "/images/zoho/zoho-crm/services-icons/projects.png",
-        style: "left-72 top-96",
-    },
-    {
-        name: "Zoho Campaigns",
-        icon: "/images/zoho/zoho-crm/services-icons/campaigns.webp",
-        style: "right-0 top-60",
-    },
-    {
-        name: "Zoho Analytics",
-        icon: "/images/zoho/zoho-crm/services-icons/analytics.png",
-        style: "right-0 top-20",
-    },
-    {
-        name: "Zoho SalesIQ",
-        icon: "/images/zoho/zoho-crm/services-icons/salesIQ.png",
-        style: "left-56 -translate-x-1/2 top-0",
-    },
+    { name: "Zoho Survey", icon: "/images/zoho/zoho-crm/services-icons/servey.webp" },
+    { name: "Zoho Desk", icon: "/images/zoho/zoho-crm/services-icons/desk.png" },
+    { name: "Zoho Forms", icon: "/images/zoho/zoho-crm/services-icons/forms.png" },
+    { name: "Zoho Mail", icon: "/images/zoho/zoho-crm/services-icons/mail.png" },
+    { name: "Zoho Projects", icon: "/images/zoho/zoho-crm/services-icons/projects.png" },
+    { name: "Zoho Campaigns", icon: "/images/zoho/zoho-crm/services-icons/campaigns.webp" },
+    { name: "Zoho Analytics", icon: "/images/zoho/zoho-crm/services-icons/analytics.png" },
+    { name: "Zoho SalesIQ", icon: "/images/zoho/zoho-crm/services-icons/salesIQ.png" },
 ];
 
 export default function ZohoEcosystemAnimated() {
     const [activeIndex, setActiveIndex] = useState(0);
 
-    // Loop through each card, one at a time
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveIndex((prev) => (prev + 1) % services.length);
-        }, 1200); // Change active every 1.2 seconds
+        }, 1200);
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <section className="w-10/12  rounded-lg my-10 mx-auto min-h-screen flex items-center justify-center bg-gradient-to-br from-mai to-[#005fb8] px-4 py-12">
-            <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
-                {/* Left: Cards in fixed positions */}
-                <div className="relative flex-1 flex items-center justify-center min-h-[480px]">
-                    <div className="relative w-[520px] h-[400px]">
+        <section className="w-full max-w-6xl rounded-lg my-10 mx-auto flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-mai to-[#005fb8] px-2 md:px-6 py-8 md:py-20">
+            <div className="w-full md:flex-1 flex flex-col  md:flex-row items-center justify-between gap-14">
+                {/* Mobile: 2-column grid, Desktop: original animated layout */}
+                <div className="w-full md:w-auto">
+                    {/* Mobile grid */}
+                    <div className="grid grid-cols-2 gap-6 md:hidden">
                         {services.map((service, i) => (
                             <motion.div
                                 key={service.name}
-                                className={`absolute ${service.style} w-40 h-32 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center text-center select-none transition-all duration-300`}
+                                className="w-full h-24 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center text-center select-none transition-all duration-300"
                                 animate={{
-                                    scale: i === activeIndex ? 1.15 : 1,
+                                    scale: i === activeIndex ? 1.08 : 1,
                                     zIndex: i === activeIndex ? 10 : 1,
                                     boxShadow:
                                         i === activeIndex
-                                            ? "0 8px 32px 0 rgba(60,60,120,0.18)"
-                                            : "0px 4px 24px 0px #0000000D",
+                                            ? "0 8px 24px 0 rgba(60,60,120,0.16)"
+                                            : "0px 2px 12px 0px #0000000D",
                                 }}
                                 transition={{
                                     type: "spring",
@@ -130,18 +49,51 @@ export default function ZohoEcosystemAnimated() {
                                 }}
                                 style={{ transformOrigin: "center center" }}
                             >
-                                <img src={service.icon} alt={service.name} className="w-10 h-10 mb-2" />
-                                <span className="text-base font-semibold text-gray-700">{service.name}</span>
+                                <img src={service.icon} alt={service.name} className="w-8 h-8 mb-1" />
+                                <span className="text-xs font-semibold text-gray-700">{service.name}</span>
                             </motion.div>
                         ))}
                     </div>
+                    {/* Desktop animated absolute layout */}
+                    <div className="relative hidden md:block  w-[400px] h-[400px]">
+                        {services.map((service, i) => {
+                            // Arrange in a circle for desktop
+                            const angle = (i / services.length) * 2 * Math.PI;
+                            const radius = 130;
+                            const x = Math.round(Math.cos(angle) * radius) + 170; // centerX
+                            const y = Math.round(Math.sin(angle) * radius) + 170; // centerY
+                            return (
+                                <motion.div
+                                    key={service.name}
+                                    className="absolute w-28 h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center text-center select-none transition-all duration-300"
+                                    style={{ left: x, top: y, transform: "translate(-50%, -50%)" }}
+                                    animate={{
+                                        scale: i === activeIndex ? 1.15 : 1,
+                                        zIndex: i === activeIndex ? 10 : 1,
+                                        boxShadow:
+                                            i === activeIndex
+                                                ? "0 8px 24px 0 rgba(60,60,120,0.16)"
+                                                : "0px 2px 12px 0px #0000000D",
+                                    }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 200,
+                                        damping: 20,
+                                    }}
+                                >
+                                    <img src={service.icon} alt={service.name} className="w-8 h-8 mb-1" />
+                                    <span className="text-xs font-semibold text-gray-700">{service.name}</span>
+                                </motion.div>
+                            );
+                        })}
+                    </div>
                 </div>
                 {/* Right: Text */}
-                <div className="flex-1 flex flex-col justify-center items-start md:pl-16">
-                    <h2 className="text-white text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+                <div className="flex-1 w-full md:w-auto flex flex-col justify-center items-center md:pl-10 mt-8 md:mt-0">
+                    <h2 className="text-white text-xl md:text-3xl lg:text-5xl font-extrabold mb-4 leading-tight text-center md:text-left">
                         Enter the<br />Zoho Ecosystem
                     </h2>
-                    <p className="text-[#e2e8f0] text-lg max-w-lg mb-2">
+                    <p className="text-[#e2e8f0] text-md md:text-base max-w-sm mb-2 text-center md:text-left">
                         Zoho is best used with Zoho. You can integrate the free editions of some of the best Zoho applications with Zoho CRM for customer support, marketing campaigns, surveys, and more. Sign up for one Zoho product and gain access to the entire portfolio with the same credentials.
                     </p>
                 </div>

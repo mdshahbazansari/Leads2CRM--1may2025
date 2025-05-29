@@ -10,7 +10,7 @@ export default function ZiaHero() {
             {/* Subheading */}
             <p className="text-lg md:text-xl text-center text-[#222] max-w-2xl mb-8 font-semibold">
                 Leverage the power of AI to create apps quickly and effortlessly<br className="hidden md:block" />
-                —just tell Zia what you need and it delivers, whether it's a simple field suggestion or a detailed process workflow.
+                —just tell Zia what you need and it delivers, whether its a simple field suggestion or a detailed process workflow.
             </p>
             {/* Button */}
             <a href="#explore" className="mb-10">
@@ -25,7 +25,7 @@ export default function ZiaHero() {
             </a>
             {/* Screenshot/Browser Frame */}
             <div className="w-full flex justify-center ">
-                <div className="rounded-xl border-4 border-mai  overflow-hidden w-7/12 shadow-2xl shadow-rose-200">
+                <div className="rounded-xl border-4 border-mai  overflow-hidden w-11/12 md:w-7/12 shadow-2xl shadow-rose-200">
 
                     <div className="flex flex-col items-center justify-center bg-white ">
                         <video

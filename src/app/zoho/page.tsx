@@ -823,7 +823,7 @@ export default function Home() {
             </div>
           </div> */}
         <ContactUs />
-        <Contact />
+        {/* <Contact /> */}
         {/* </section> */}
       </main>
     </>
