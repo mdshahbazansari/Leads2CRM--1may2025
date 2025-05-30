@@ -36,6 +36,8 @@ import FAQ from "@/components/FAQ/FAQ";
 import FAQSlider from "./zoho-crm/FAQSlider";
 import EstimateProjectBanner from "@/components/EstimateProjectBanner/EstimateProjectBanner";
 import ZohoCRMIndustry from "./zoho-crm/ZohoCRMIndustry";
+import InteriorDesignCRMHero from "./zoho-crm/InteriorDesignCRMHero";
+import Login from '@/components/animate/Login'
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.leads2crm.com"),
@@ -73,6 +75,7 @@ export default function Home() {
       <Homes />
       <ExpertiseSection />
       <ZohoCRMIndustry />
+      <InteriorDesignCRMHero />
       {/* <MeetClients/>
       <PartnerSection/> */}
 

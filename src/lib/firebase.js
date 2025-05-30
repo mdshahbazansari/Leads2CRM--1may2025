@@ -1,22 +1,21 @@
+// lib/firebase.ts
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDNlwf9tzNtBnuuixaL0j9UMn9Gt-DYRUY",
-  authDomain: "leads2crm-website.firebaseapp.com",
-  projectId: "leads2crm-website",
-  storageBucket: "leads2crm-website.firebasestorage.app",
-  messagingSenderId: "706834284724",
-  appId: "1:706834284724:web:1c1b397369e056966897e1",
-  measurementId: "G-QW7M9JF6QP",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-// const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+// Prevent re-initialization during hot reloads
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 
 const auth = getAuth(app);
 const db = getFirestore(app);

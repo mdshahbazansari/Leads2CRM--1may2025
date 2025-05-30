@@ -10,7 +10,6 @@ interface FormState {
     name: string;
     email: string;
     phone: string;
-    agree: boolean;
     page: string;
 }
 
@@ -18,7 +17,6 @@ type ErrorState = {
     name?: string;
     email?: string;
     phone?: string;
-    agree?: string;
 };
 
 export default function ZohoCreatorHero() {
@@ -31,7 +29,6 @@ export default function ZohoCreatorHero() {
         name: "",
         email: "",
         phone: "",
-        agree: false,
         page: pathname,
     });
     const [errors, setErrors] = useState<ErrorState>({});
@@ -51,7 +48,6 @@ export default function ZohoCreatorHero() {
         if (!form.name.trim()) newErrors.name = "Full Name is required.";
         if (!form.email.trim()) newErrors.email = "Email is required.";
         if (!form.phone.trim()) newErrors.phone = "Phone Number is required.";
-        if (!form.agree) newErrors.agree = "You must agree before submitting.";
         return newErrors;
     };
 
@@ -70,7 +66,6 @@ export default function ZohoCreatorHero() {
                 name: "",
                 email: "",
                 phone: "",
-                agree: false,
                 page: pathname,
             });
             setTriedSubmit(false);
@@ -146,7 +141,7 @@ export default function ZohoCreatorHero() {
                                     <div className="text-red-600 text-xs px-1 pt-1">{errors.phone}</div>
                                 )}
                             </div>
-                            <div>
+                            {/* <div>
                                 <label className="flex items-center mt-1 text-xs text-gray-800">
                                     <input
                                         type="checkbox"
@@ -160,7 +155,7 @@ export default function ZohoCreatorHero() {
                                 {triedSubmit && errors.agree && (
                                     <div className="text-red-600 text-xs">{errors.agree}</div>
                                 )}
-                            </div>
+                            </div> */}
                             <button
                                 type="submit"
                                 className="mt-2 w-full bg-[#e53935] hover:bg-[#c62828] text-white font-bold py-3 text-base shadow transition"

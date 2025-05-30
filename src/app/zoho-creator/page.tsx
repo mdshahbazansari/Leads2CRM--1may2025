@@ -13,7 +13,7 @@ const page = () => {
     return (
         <div>
             <ZohoCreatorHero />
-            <ZiaHero />
+            {/* <ZiaHero /> */}
             <AIBanner />
             <AppIntegrationHero />
             <AutomateBusinessProcesses />

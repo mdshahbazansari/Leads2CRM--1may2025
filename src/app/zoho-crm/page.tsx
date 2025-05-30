@@ -1,3 +1,4 @@
+'use client'
 import ZohoCrm from "@/components/zoho/ZohoCrm"
 import TakeUsForASpin from "./TakeUsForASpin"
 import FAQSlider from "./FAQSlider"
@@ -11,6 +12,7 @@ import ContactUs from "@/app/contact-us/ContactUs"
 import ZohoEcosystemAnimated from "./ZohoEcosystemAnimated"
 import EstimateProjectBanner from "@/components/EstimateProjectBanner/EstimateProjectBanner"
 import InteriorDesignCRMHero from "./InteriorDesignCRMHero"
+import CRMHomeBuyerJourney from "./CRMHomeBuyerJourney"
 
 
 const page = () => {
@@ -19,8 +21,9 @@ const page = () => {
             {/* <ZohoCrm /> */}
             <ZohoCrmHero />
             {/* <DeskHeroSignup /> */}
-            <ZohoBanner />
+            <CRMHomeBuyerJourney />
             <InteriorDesignCRMHero />
+            <ZohoBanner />
             {/* <EstimateProjectBanner /> */}
             <ZohoCRMIndustry />
             <ZohoCreatorCustomApp />

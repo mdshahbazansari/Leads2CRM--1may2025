@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function InteriorDesignCRMHero() {
     return (
         <section className="bg-white w-full py-10 px-4 md:px-0">
-            <h1 className="text-3xl max-w-6xl mx-auto md:text-5xl md:py-10 py-4 text-center font-extrabold text-mai mb-4 leading-tight">
+            <h1 className="text-2xl max-w-6xl mx-auto md:text-5xl md:py-10 py-4 text-center font-extrabold text-mai mb-4 leading-tight">
                 Showroom CRM (Kitchen & Interiors),<br />
                 Interior Design CRM
             </h1>

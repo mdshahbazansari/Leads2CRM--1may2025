@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 
 export default function AutomateBusinessProcesses() {
@@ -10,11 +11,11 @@ export default function AutomateBusinessProcesses() {
                         src="/images/zoho/zoho-creator/automatic-business-process.jpg"
                         alt="Scheduled Releases"
                         className="rounded-lg shadow-lg max-w-full"
-                        style={{ minWidth: 320, maxWidth: 480 }}
+                    // style={{ minWidth: 320, maxWidth: 480 }}
                     />
                 </div>
                 {/* Right: Text Content */}
-                <div className="flex-1 flex flex-col items-start">
+                <div className="flex-1 pl-10 flex flex-col items-start">
                     <h2 className="text-2xl text-gray-700 md:text-4xl font-extrabold mb-4">
                         Automate your business<br className="hidden md:block" /> processes in a few clicks
                     </h2>
@@ -35,9 +36,9 @@ export default function AutomateBusinessProcesses() {
                             <span>Gather relevant info on the go</span>
                         </li>
                     </ul>
-                    <button className="bg-mai hover:bg-blue-700 text-white font-bold px-8 py-3 rounded transition">
+                    <Link href="#contactUs"><button className="bg-mai hover:bg-blue-700 text-white font-bold px-8 py-3 rounded transition">
                         LEARN MORE
-                    </button>
+                    </button></Link>
                 </div>
             </div>
         </section>

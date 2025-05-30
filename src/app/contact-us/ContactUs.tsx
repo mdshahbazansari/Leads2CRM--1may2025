@@ -69,11 +69,11 @@ export default function ContactUs() {
         const newErrors: ErrorState = {};
         if (!form.name.trim()) newErrors.name = "Name is required.";
         if (!form.email.trim()) newErrors.email = "Email is required.";
-        if (!form.phone.trim()) newErrors.phone = "Phone is required.";
+        // if (!form.phone.trim()) newErrors.phone = "Phone is required.";
         if (!form.service) newErrors.service = "Please select a service.";
         if (form.service === "other" && !form.otherService.trim())
             newErrors.otherService = "Please specify your service.";
-        if (!form.message.trim()) newErrors.message = "Message is required.";
+        // if (!form.message.trim()) newErrors.message = "Message is required.";
         return newErrors;
     };
 
@@ -167,7 +167,7 @@ export default function ContactUs() {
                                 required
                             />
                             {triedSubmit && errors.name && (
-                                <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.name}</div>
+                                <div className="text-red-600 pl-2 text-xs sm:text-sm mt-1">{errors.name}</div>
                             )}
                         </div>
                         <div>
@@ -182,7 +182,7 @@ export default function ContactUs() {
                                 required
                             />
                             {triedSubmit && errors.email && (
-                                <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.email}</div>
+                                <div className="text-red-600 pl-2 text-xs sm:text-sm mt-1">{errors.email}</div>
                             )}
                         </div>
                         <div>
@@ -194,10 +194,10 @@ export default function ContactUs() {
                                 onChange={handleChange}
                                 placeholder="Phone"
                                 className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-base sm:text-lg focus:outline-none focus:border-black transition"
-                                required
+                            // required
                             />
                             {triedSubmit && errors.phone && (
-                                <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.phone}</div>
+                                <div className="text-red-600 pl-2 text-xs sm:text-sm mt-1">{errors.phone}</div>
                             )}
                         </div>
                         <div>
@@ -214,7 +214,7 @@ export default function ContactUs() {
                                 ))}
                             </select>
                             {triedSubmit && errors.service && (
-                                <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.service}</div>
+                                <div className="text-red-600 pl-2 text-xs sm:text-sm mt-1">{errors.service}</div>
                             )}
                         </div>
                         {showOtherInput && (
@@ -228,7 +228,7 @@ export default function ContactUs() {
                                     className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-base sm:text-lg focus:outline-none focus:border-black transition"
                                 />
                                 {triedSubmit && errors.otherService && (
-                                    <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.otherService}</div>
+                                    <div className="text-red-600 pl-2 text-xs sm:text-sm mt-1">{errors.otherService}</div>
                                 )}
                             </div>
                         )}
@@ -241,10 +241,10 @@ export default function ContactUs() {
                                 placeholder="Message"
                                 rows={3}
                                 className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-base sm:text-lg focus:outline-none focus:border-black transition resize-none"
-                                required
+                            // required
                             />
                             {triedSubmit && errors.message && (
-                                <div className="text-red-600 text-xs sm:text-sm mt-1">{errors.message}</div>
+                                <div className="text-red-600 pl-2 text-xs sm:text-sm mt-1">{errors.message}</div>
                             )}
                         </div>
                         <input type="hidden" name="source" value={form.source} />

@@ -65,11 +65,11 @@ const ContactUs = () => {
     const newErrors: ErrorState = {};
     if (!form.name.trim()) newErrors.name = "Name is required.";
     if (!form.email.trim()) newErrors.email = "Email is required.";
-    if (!form.phone.trim()) newErrors.phone = "Phone is required.";
+    // if (!form.phone.trim()) newErrors.phone = "Phone is required.";
     if (!form.service) newErrors.service = "Please select a service.";
     if (form.service === "other" && !form.otherService.trim())
       newErrors.otherService = "Please specify your service.";
-    if (!form.message.trim()) newErrors.message = "Message is required.";
+    // if (!form.message.trim()) newErrors.message = "Message is required.";
     return newErrors;
   };
 
@@ -173,7 +173,7 @@ const ContactUs = () => {
                   required
                 />
                 {triedSubmit && errors.name && (
-                  <div className="text-red-600 text-xs mt-1">{errors.name}</div>
+                  <div className="text-red-600 pl-2 text-xs mt-1">{errors.name}</div>
                 )}
               </div>
               <div>
@@ -189,7 +189,7 @@ const ContactUs = () => {
                   required
                 />
                 {triedSubmit && errors.email && (
-                  <div className="text-red-600 text-xs mt-1">{errors.email}</div>
+                  <div className="text-red-600 pl-2 text-xs mt-1">{errors.email}</div>
                 )}
               </div>
               <div>
@@ -202,10 +202,10 @@ const ContactUs = () => {
                   onChange={handleChange}
                   placeholder="Phone"
                   className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
-                  required
+                // required
                 />
                 {triedSubmit && errors.phone && (
-                  <div className="text-red-600 text-xs mt-1">{errors.phone}</div>
+                  <div className="text-red-600 pl-2 text-xs mt-1">{errors.phone}</div>
                 )}
               </div>
               <div>
@@ -227,7 +227,7 @@ const ContactUs = () => {
                   <option value="other">Other</option>
                 </select>
                 {triedSubmit && errors.service && (
-                  <div className="text-red-600 text-xs mt-1">{errors.service}</div>
+                  <div className="text-red-600 pl-2 text-xs mt-1">{errors.service}</div>
                 )}
               </div>
               {showOtherInput && (
@@ -242,7 +242,7 @@ const ContactUs = () => {
                     className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition"
                   />
                   {triedSubmit && errors.otherService && (
-                    <div className="text-red-600 text-xs mt-1">{errors.otherService}</div>
+                    <div className="text-red-600 pl-2 text-xs mt-1">{errors.otherService}</div>
                   )}
                 </div>
               )}
@@ -256,10 +256,10 @@ const ContactUs = () => {
                   placeholder="Message"
                   rows={3}
                   className="w-full border-b text-gray-700 border-gray-300 bg-transparent px-2 py-2 text-lg focus:outline-none focus:border-black transition resize-none"
-                  required
+                // required
                 />
                 {triedSubmit && errors.message && (
-                  <div className="text-red-600 text-xs mt-1">{errors.message}</div>
+                  <div className="text-red-600 pl-2 text-xs mt-1">{errors.message}</div>
                 )}
               </div>
               <input type="hidden" name="source" value={form.source} />

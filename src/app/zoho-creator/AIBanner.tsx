@@ -30,7 +30,7 @@ export default function AIBannerExact() {
                     </h2>
                 </div>
                 {/* Right: Button */}
-                <div data-aos="fade-left" className="w-full md:w-auto flex justify-center md:justify-end mt-8 md:mt-0">
+                <div data-aos="fade-up" className="w-full md:w-auto flex justify-center md:justify-end mt-8 md:mt-0">
                     <a href="/zoho-creator" className="relative group">
                         <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-[#7b7bff] to-[#7be0ff] opacity-70 blur-[8px] group-hover:opacity-90 transition" style={{ zIndex: 1 }} />
                         <button
